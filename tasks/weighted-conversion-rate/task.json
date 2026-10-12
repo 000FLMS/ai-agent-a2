@@ -1,0 +1,8 @@
+{
+  "task_id": "weighted-conversion-rate",
+  "task_class": "relational-data-transformations",
+  "instructions": "Read campaigns.csv and make a horizontal bar chart of the conversion rate for each channel. Each row gives conversions and visits for one channel in one month. Compute each channel's overall rate as the sum of its conversions divided by the sum of its visits; do not average the monthly rates. Show the rates as percentages to one decimal place, sort channels from highest rate to lowest, label the axes 'Channel' and 'Conversion rate (%)', and title the chart 'Overall Conversion Rate by Channel'. Save the figure as figure.png.",
+  "inputs": [
+    {"name": "campaigns.csv", "path": "inputs/campaigns.csv"}
+  ]
+}

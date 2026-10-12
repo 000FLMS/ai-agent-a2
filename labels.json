@@ -1,0 +1,132 @@
+{
+  "labels": [
+    {
+      "run_id": "cumulative-net-sales__glm",
+      "errors": [
+         {
+          "family": "hard_to_read",
+          "evidence": "The task requested sum net sales by date and product, the figure added redundent date labels"
+        }
+      ]
+    },
+    {
+      "run_id": "cumulative-net-sales__ministral",
+      "errors": []
+    },
+    {
+      "run_id": "cumulative-net-sales__qwen",
+      "errors": [
+        {
+           "family": "execution_failure",
+          "evidence": "Agenet kept trying to source but failed"
+        }
+      ]
+    },
+    {
+      "run_id": "monthly-calendar-heatmap__glm",
+      "errors": [
+         {
+          "family": "wrong_chart",
+          "evidence": "The week labels are reversed"
+        }
+      ]
+    },
+    {
+      "run_id": "monthly-calendar-heatmap__ministral",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The rows group dates by day-of-month ranges instead of calendar weeks"
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The task requested Leave dates outside February blank, the figure shows all as 0"
+        }
+      ]
+    },
+    {
+      "run_id": "monthly-calendar-heatmap__qwen",
+      "errors": [
+        {
+           "family": "execution_failure",
+          "evidence": "Agenet kept trying to find input data but failed"
+        }
+      ]
+    },
+    {
+      "run_id": "parallel-coordinates-normalization__glm",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The task requested label each vertical axis with its metric name and its original minimum and maximum values, the figure missed it"
+        }
+      ]
+    },
+    {
+      "run_id": "parallel-coordinates-normalization__ministral",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The task requested label each vertical axis with its metric name and its original minimum and maximum values, the figure missed it"
+        }
+      ]
+    },
+    {
+      "run_id": "parallel-coordinates-normalization__qwen",
+      "errors": [
+        {
+           "family": "execution_failure",
+          "evidence": "Agenet kept trying to find input data but failed"
+        }
+      ]
+    },
+    {
+      "run_id": "weighted-conversion-rate__glm",
+      "errors": [
+         {
+          "family": "wrong_data",
+          "evidence": "Wrong order for top-to-bottom rates"
+        }
+      ]
+    },
+    {
+      "run_id": "weighted-conversion-rate__ministral",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The task requested show the rates as percentages to one decimal place, the figure missed it"
+        }
+      ]
+    },
+    {
+      "run_id": "weighted-conversion-rate__qwen",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "Calculated wrong rate for conversion/ visit per channel"
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The task requested horizontal chart, the figure is vertical"
+        }
+      ]
+    },
+    {
+      "run_id": "zone-temperature-merge__glm",
+      "errors": []
+    },
+    {
+      "run_id": "zone-temperature-merge__ministral",
+      "errors": []
+    },
+    {
+      "run_id": "zone-temperature-merge__qwen",
+      "errors": [
+         {
+           "family": "execution_failure",
+          "evidence": "Agenet kept trying to source but failed"
+        }
+      ]
+    }
+  ]
+}

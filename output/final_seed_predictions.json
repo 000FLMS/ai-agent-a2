@@ -1,0 +1,1495 @@
+{
+  "predictions": [
+    {
+      "run_id": "001",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "004",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The fourth subplot's x-axis range exceeds the specified range of 0.02 to 25.0, extending to 30.0, and the data points are plotted using a different x array (linspace with 100 points) instead of the required evenly spaced range from 0.02 to 25.0 with step 0.02."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The x-axis of the fourth subplot extends beyond 25.0, exceeding the specified range of 0.02 to 25.0."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The y-axis label 'y' in the top-left subplot is partially cut off at the top edge of the plot."
+        }
+      ]
+    },
+    {
+      "run_id": "008",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The figure does not show the requested data because it includes an incorrect filter that excludes 'orange' from the source, resulting in missing flows involving 'orange' as a source."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The figure title does not match the required title 'Fruit Flow Sankey Diagram' as specified in the task."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'lime (260)' is partially cut off by the left edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "009",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The figure shows incorrect version labels, such as v1.4.3 and v2.2.4, which are not in the provided input data, and some versions like v3.0.3 are missing."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The title of the chart is 'Matplotlib Release Dates' instead of 'Matplotlib Release Dates' as required."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "Text at the bottom of the image is cut off by the edge and not fully visible."
+        }
+      ]
+    },
+    {
+      "run_id": "010",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "013",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot uses the rainbow colormap instead of the required reversed plasma colormap."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The plot uses the rainbow colormap instead of the required reversed plasma colormap."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The label 'y' on the y-axis is partially cut off by the image edge, making it hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "016",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart includes versions with share below 0.5%, such as 'UC Browser 7.0' (0.36) and 'Yandex Browser 19.4' (0.29), which violates the requirement to drop versions below 0.5%."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart does not drop versions with share below 0.5%, as 'UC Browser 7.0' (0.36) and 'Yandex Browser 19.4' (0.29) are still included."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "Text labels for Chrome versions are too small to read clearly."
+        }
+      ]
+    },
+    {
+      "run_id": "021",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The median line in the 'auth' service box is not at the correct value; the median of [82, 91, 95, 99, 104, 110, 118, 240] is 101.5, but the plotted median is at approximately 100, which is incorrect."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The title of the chart is incorrect; it reads 'Distribution of Request Latency Across Backend Services' instead of 'Distribution of Request Latency Across Backend Services (ms)' as required."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The x-axis label 'auth' is partially cut off at the left edge of the image, making it hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "022",
+      "errors": [
+        {
+          "family": "hard_to_read",
+          "evidence": "The y-axis label 'Active Users' in the logarithmic scale plot is partially cut off at the top edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "023",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The subplot layout is 1x2 instead of the required 2x1 grid."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The color bar on the right side of the right plot is partially cut off at the top and bottom, making the top and bottom values unreadable."
+        }
+      ]
+    },
+    {
+      "run_id": "025",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart does not display the requested hierarchical sunburst structure based on 'Major Area', 'Regions', and 'Country'; instead, it shows a pie chart with individual countries labeled, and the color coding for regions is not applied as specified."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart does not use the specified color coding for regions; instead, it uses a single gray color for all segments and does not include a legend for region colors."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "Text near the top edge is cut off, making it hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "026",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart does not display the hierarchical data from the CSV file; instead, it shows a single gray circle with '/CAfricaa' text, indicating a failure to properly create the sunburst chart with the correct structure and values."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart is not a sunburst chart; it is a simple concentric circle visualization with incorrect text and no hierarchical structure based on the data."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text '/CAfricaa:' is partially cut off and illegible at the center of the chart."
+        }
+      ]
+    },
+    {
+      "run_id": "028",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The figure shows data for all years as scattered points, but the task requires only the highest temperature for each month across all years to be plotted, with a blue curve specifically for 2015 data. The current plot incorrectly displays multiple data points per month (one for each year) instead of the maximum temperature per month."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The title of the chart is incorrect; it reads 'Monthly Highest Temperature in Amherst (2004-2015)' but the task requires the exact title 'Monthly Highest Temperature in Amherst (2004-2015)' without the extra space after the year range."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Dec' at the top of the polar chart is cut off by the image edge, making it partially unreadable."
+        }
+      ]
+    },
+    {
+      "run_id": "029",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The figure does not show the requested data because the third row subplots are labeled 'Laplacian (Linear Scale)' and 'Cauchy (Linear Scale)', but they actually display the CDFs of the Normal and Cauchy distributions, respectively, instead of the Laplacian and Cauchy as required."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The third row subplots use linear y-axis scaling but do not display all three distribution types, instead showing only one distribution per subplot."
+        }
+      ]
+    },
+    {
+      "run_id": "030",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The figure title is incorrect; it shows 'Shared axes' instead of 'Sharing x per column, y per row'."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The figure title is 'Shared axes' instead of the required 'Sharing x per column, y per row'."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The x-axis label 'w' in the bottom-middle and bottom-right subplots is partially cut off by the image edge."
+        }
+      ]
+    },
+    {
+      "run_id": "031",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart shows incorrect values for the 'Agree' category; for example, 'Remote Work' is shown as approximately 62% for 'Agree', but the bar height is visually lower than 62%, and the legend colors are mismatched to the data (e.g., 'Agree' is blue, but the first bar in each group is not consistently blue)."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The legend entries are colored blue, orange, and green, but the task requires the legend entries to be exactly Agree, Neutral, Disagree without specifying colors, and the chart uses colors that do not match the expected default or specified style, indicating a mismatch in visual representation."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Highest disagreement: Open Floor Plans (48%)' is partially cut off at the top edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "034",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The figure includes an additional annotation text 'white = positive, black = negative' at the bottom, which is not required by the task."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text at the bottom of the plot is cut off by the image edge, making it hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "038",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows total bill amounts by day of the week, but the x-axis labels are incorrect; it shows 'Thur', 'Fri', 'Sat', 'Sun' instead of 'Sun', 'Sat', 'Fri', 'Thur' as expected from the data."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart compares total bill amounts by day of the week, not by smoking status as required; the x-axis shows days instead of smokers vs non-smokers."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The y-axis label 'Total bill ($)’ is partially cut off at the top of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "039",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plotted line does not represent y=x in the Mercator projection; instead, it shows a distorted curve due to incorrect application of the Mercator formula and clipping of latitude values, resulting in a non-linear and incomplete representation of the intended straight line."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The y-axis label is 'Latitude (Mercator)' instead of 'Latitude' as required."
+        }
+      ]
+    },
+    {
+      "run_id": "046",
+      "errors": [
+        {
+          "family": "hard_to_read",
+          "evidence": "The numbers at the ends of the chain segments are partially cut off by the image edge, making them hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "047",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart only displays data for one country (France) with incorrect labeling and missing data for Germany, Brazil, India, and Canada."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart does not display multiple bars for each country; instead, it shows only one bar with a single segment, and the x-axis label is incorrect."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The x-axis label 'Country' is partially cut off at the bottom edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "050",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The final flow value from Phase 5 to Hurray! is shown as 20%, but it should be 10% according to the task requirements."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The final phase 'Hurray!' is not highlighted with a blue color and bold font as required."
+        }
+      ]
+    },
+    {
+      "run_id": "051",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The streamplot in the top-left panel is titled 'Varying density' but does not show varying density; it uses a fixed density value, and the title does not match the actual content."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The first panel title is 'Varying density' instead of the required 'Varying Density'."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The 'Varying Color' plot has a color bar on the right edge where the top and bottom values are cut off, making the full range of the color scale unreadable."
+        }
+      ]
+    },
+    {
+      "run_id": "052",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The sharp interface is incorrectly represented as a vertical line at x=0 with a white color, and the horizontal green lines are missing; the legend labels are also incorrect, showing 'Phase field', 'Composition', and 'Sharp interface' instead of the specified equations."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The sharp interface is represented by a white vertical line instead of a green vertical line as required."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Exp[0.5*ln[1/2*(1+tanh(gamma*x))]]' is partially cut off at the left edge of the plot, making it hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "053",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "055",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart shows 412 visits on Thursday, but the annotation text incorrectly states 'Peak: 412 visits' with a typo in the number of visits (412 vs. 412), and the y-axis label is missing."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The annotation text 'Peak: 412 visits' is missing from the chart."
+        }
+      ]
+    },
+    {
+      "run_id": "059",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The second chart incorrectly uses different colors for bars with positive and negative y values, while the task requires all bars to be blue if y > 0 and orange otherwise, with transparency adjustments only."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The x-axis labels are incorrect; they show 'item number 1' to 'item number 20' instead of the required 'X values'."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "Text at the bottom of both charts is cut off by the image edge, making it unreadable."
+        }
+      ]
+    },
+    {
+      "run_id": "060",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The title of the diagram is incorrect; it reads 'Fishbone diagram: Decreased Sales Performance' instead of the required 'Fishbone diagram: Decreased Sales Performance' with the exact casing and spacing."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The title of the figure is 'Fishbone diagram: Decreased Sales Performance' but the text is not bold and the font size is smaller than specified."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Pricing Strategy' is cut off at the bottom edge of the image, making it partially unreadable."
+        }
+      ]
+    },
+    {
+      "run_id": "062",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The x-axis label is 'Transport Mode' instead of the required 'Transport Mode' with the correct order of labels (Bus, Bike, Car, Train) at positions 1, 2, 3, 4, but the labels are correctly placed."
+        }
+      ]
+    },
+    {
+      "run_id": "065",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "068",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows a straight line but the x-axis extends beyond -180 to 180, and the y-axis values are not correctly transformed using the Mercator projection formula, resulting in incorrect latitude scaling."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The x-axis limits are set to -200 to 200 instead of the required -180 to 180."
+        }
+      ]
+    },
+    {
+      "run_id": "069",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart shows Africa with two different colors (light green and dark green) in the legend, but the data for Africa should only be represented by one color (green) as specified in the requirements."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart title is 'Global Food Security Index, 2020' but the subtitle is 'Overall score 0-100, 100 = best environment' which is not present in the rendered image."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Oceania' in the legend is partially cut off by the image edge, making it hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "070",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The title of the plot is incorrect; it reads 'ggplot' style sheet instead of the required 'ggplot' style sheet."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The legend text is partially cut off at the right edge of the image, making some of the labels unreadable."
+        }
+      ]
+    },
+    {
+      "run_id": "074",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows exp(t) and sin(2πt) but the y-axis labels are incorrect; the left y-axis is labeled 'exp(t)' but the scale is wrong (should be exponential, not linear), and the right y-axis is labeled 'sin(2πt)' but the scale is correct, indicating a mismatch in expected data representation."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The left y-axis label is incorrectly labeled as 'exp(t)' instead of 'exp(t)' with the correct color green, and the right y-axis label is incorrectly labeled as 'sin(2πt)' instead of 'sin(2πt)' with the correct color blue."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'exp(t)' in the legend is partially cut off by the right edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "075",
+      "errors": []
+    },
+    {
+      "run_id": "077",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows the wrong data for the Oroville reservoir; the line labeled 'Oroville' is actually the Shasta data, and vice versa."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The legend labels are incorrect; the lines are labeled 'Oroville' and 'Shasta' but the legend shows 'Oroville' as blue and 'Shasta' as orange, while the plot shows Oroville as orange and Shasta as blue."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Peak: 3452.7 TAF (week 17)' is partially cut off by the right edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "079",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The colormap used is not CMRmap; the plot displays a different color scheme."
+        }
+      ]
+    },
+    {
+      "run_id": "080",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The checkout count values are not printed above each bar as required."
+        }
+      ]
+    },
+    {
+      "run_id": "081",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The figure is a 2D heatmap instead of a 3D voxel plot, and the axes are labeled 'r' and 'g' with a 'b' label on the z-axis, but the plot does not show a cube or 3D voxels as required."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The figure is a 2D heatmap instead of a 3D voxel plot, and the axes are labeled 'r' and 'g' but not 'b', with no 3D projection or cube structure visible."
+        }
+      ]
+    },
+    {
+      "run_id": "082",
+      "errors": []
+    },
+    {
+      "run_id": "083",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The second row plots use scatter points instead of event lines, and the data size is 80x70 but the plots show 80 categories with event positions, not 80 events per category as expected for event plots."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The second row plots use scatter points instead of event lines, violating the required event plot chart type."
+        }
+      ]
+    },
+    {
+      "run_id": "086",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The bars in the second subplot are not colored blue for positive y values and orange for negative y values as required; instead, they are colored blue and yellow, indicating a color assignment error."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The bars in the first chart are not colored blue for positive y values and orange for negative y values; they are blue for positive and yellow for negative, violating the specified color requirement."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "Text at the top of the left plot is cut off by the image edge, making the title partially unreadable."
+        }
+      ]
+    },
+    {
+      "run_id": "087",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The third row of subplots uses a linear y-axis scale, but the x-axis limits are set to (-10, 10) and (-4, 4), which do not match the required specification of focusing on specific areas of the distribution as indicated in the task."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The third row uses a linear y-axis scale, but the subplots do not all display the same distribution types; instead, they show different x-axis ranges without clearly labeling the distribution type in each subplot."
+        }
+      ]
+    },
+    {
+      "run_id": "089",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "090",
+      "errors": []
+    },
+    {
+      "run_id": "091",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The overall title of the figure is 'Spine positions' instead of 'Spine positions' as required."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'center' is cut off at the top edge of the upper left plot, with only part of the label visible."
+        }
+      ]
+    },
+    {
+      "run_id": "096",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "097",
+      "errors": [
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Max: 1.000' in the annotation is partially cut off by the right edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "098",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot does not show two different left and right scales; both data series are plotted on the same y-axis, and the second data series (sin function) is not visible due to the scale of the first data series (exponential function)."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The plot does not use different left and right scales as required; both data series are plotted on the same y-axis."
+        }
+      ]
+    },
+    {
+      "run_id": "099",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows 30 bars with random positions, diameters, and thicknesses, but the radial tick labels are not removed, and the gridlines are turned off, violating the requirements."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The y ticks (radial tick labels) are not removed, contrary to the requirement."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "Text near the edge at 90° is cut off and partially invisible."
+        }
+      ]
+    },
+    {
+      "run_id": "103",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "104",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The annotation text reads 'Peak: 412 visits' but the y-value in the annotation is incorrect; the text is placed at y=430.0, which is not the correct data point for the peak visit count of 412."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The annotation text reads 'Peak: 412 visits' but is placed at the wrong y-coordinate; it should be at y=430.0 in data coordinates, but it appears at approximately y=412.0, directly on the data point instead of above it."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Peak: 412 visits' is partially cut off by the top edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "105",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The x-axis label 'Four separate samples' is missing from the first subplot."
+        }
+      ]
+    },
+    {
+      "run_id": "106",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The title of the plot is 'Filled 3D tricontour' instead of the required 'Filled 3D tricontour'."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The plot uses the jet colormap instead of the required CMRmap colormap."
+        }
+      ]
+    },
+    {
+      "run_id": "108",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The overall title of the figure is 'Seasonal Temperature Comparison Across Cities', which does not contain the word 'temperature' as required by the task."
+        }
+      ]
+    },
+    {
+      "run_id": "111",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot uses incorrect colors; instead of purple, orange, grey, and pink, it shows purple, orange, grey, and a brownish-pink, and the last bar of each set is not colored black as required."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The plot uses incorrect colors; it shows purple, orange, grey, and pink shades but also includes black bars, which are not properly assigned to the last bar of each set as required."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "Text on the x-axis is cut off by the image edge, making some numbers unreadable."
+        }
+      ]
+    },
+    {
+      "run_id": "112",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows only one series of points, not two distinct series (normal points and outliers), and the y-axis break is not visually indicated by slanted lines as required."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The figure uses a split-axis layout instead of a single axis with a broken y-axis indicated by slanted lines, and the y-axis does not start at 0 in the lower panel."
+        }
+      ]
+    },
+    {
+      "run_id": "115",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The figure does not show the requested median markers as circular points on top of the violins."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The median markers are missing from the plot."
+        }
+      ]
+    },
+    {
+      "run_id": "117",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot is 2D instead of 3D, missing the 'w' axis and showing only 'u' and 'v' axes, which does not match the requirement for a 3D plot with 'u', 'v', and 'w' axes."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The plot is 2D instead of 3D, missing the 'w' axis and 3D projection as required."
+        }
+      ]
+    },
+    {
+      "run_id": "124",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot title is incorrect; it shows 'Polar Bar Plot with Random Diameters and Thicknesses' instead of the expected 'Polar Bar Plot with Random Diameters and Thicknesses' as specified in the task."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The title of the plot is 'Polar Bar Plot with Random Diameters and Thicknesses' instead of 'Polar Bar Plot with Random Diameters and Thicknesses', which does not match the required title."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The radial axis labels near the center are partially obscured by overlapping bars, making them hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "125",
+      "errors": []
+    },
+    {
+      "run_id": "126",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The equation used in the plot is (x-4)(x-6)(x-8)+60 instead of the required (z-4)(z-6)(z-8)+90."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The y-axis does not start from 0; it starts from a negative value, violating the requirement that the y-axis must start from 0."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'f(x) = (x-4)(x-6)(x-8)+90 with the shaded integral' is cut off at the top edge of the image, making it partially unreadable."
+        }
+      ]
+    },
+    {
+      "run_id": "128",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows multiple y layers instead of a single y=k plane as required, and the colors do not match the specified 'purple', 'orange', 'grey', 'pink' for each set."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The y-axis labels do not correspond to the discrete values that data is available for; instead, they show a range of values from -5 to 5, while the data is only present at y = 0."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Y (Layer)' on the y-axis is partially cut off at the edge of the image, making it hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "129",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart is a horizontal bar chart, not a concentric doughnut chart as required."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart is a horizontal bar chart, not a concentric doughnut chart as required."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text '2018' is cut off by the left edge of the image, making it partially unreadable."
+        }
+      ]
+    },
+    {
+      "run_id": "130",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot uses the wrong colormap (jet instead of viridis) and the colorbar label is incorrect (Engine displacement (cc) instead of Engine Displacement (cc) with a proper scale)."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The colorbar uses a non-perceptually uniform colormap (jet) instead of the required viridis colormap."
+        }
+      ]
+    },
+    {
+      "run_id": "131",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The figure uses eventplot with incorrect data dimensions: the first row uses 8x70 data but the second row uses 80x70 gamma data, which does not match the requested 8x70 for both rows."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The figure uses a 4x1 layout instead of the required 2x2 subplot layout."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The y-axis label '100' in the third panel is partially cut off by the image edge, making it hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "135",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The figure shows incorrect category labels, such as 'Pricing Strategy' instead of 'Pricing Strategy' and 'Marketing and Sales Strategy' instead of 'Marketing and Sales Strategy', and the causes are not correctly associated with their respective categories."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The diagram uses a horizontal layout with the main problem on the right, whereas the task requires the main problem to be at the head of the diagram on the right side with branches emanating from a central spine, which is not visually represented in the provided image."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Problem: Decreased Sales Performance' is cut off by the right edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "136",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The y-axis labels are swapped; 'Bill' is at y=20 and 'Jim' is at y=10, but the data shows Bill should be at y=10 and Jim at y=20."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The y-axis tick labels are swapped; 'Bill' is at the top and 'Jim' is at the bottom, but the task requires 'Bill' at y=10 and 'Jim' at y=20."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'race interrupted' is partially cut off by the right edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "141",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart displays incorrect values for the number of responses for each sport in each country, such as showing 30 for Tennis in Italy instead of 30, but the values for other sports are also mismatched with the input data."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart uses a vertical orientation instead of the required horizontal orientation."
+        }
+      ]
+    },
+    {
+      "run_id": "142",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart is a vertical stacked bar chart instead of a horizontal one as required."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart is a vertical stacked bar chart instead of a horizontal stacked bar chart as required."
+        }
+      ]
+    },
+    {
+      "run_id": "143",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The fourth subplot's y-values are incorrect; it plots x^3 instead of 15^x, and the error bars are not properly calculated based on the specified formula."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The fourth subplot's y-axis has error bars that extend below zero, violating the requirement that the y-axis have a lower limit of 0.15."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Errorbars go negative' in the top-right plot is partially cut off by the image edge, making it hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "145",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "146",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The main problem text is incorrectly placed at the center of the diagram instead of at the head of the fishbone, and the title is duplicated at the top and center, indicating a layout error."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The main problem text 'Decreased Sales Performance' is incorrectly placed at the end of the spine instead of at the head of the diagram."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Decreased Sales Performance' is partially cut off at the right edge of the image, making it hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "150",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The z-axis values are incorrectly scaled, with the maximum probability exceeding 0.1, which is inconsistent with the expected Gaussian distribution peaks for the given parameters."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The polygons under the 3D line graphs are not properly filled; instead, the plot shows only the lines without the intended filled polygon surfaces."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The y-axis label is partially cut off at the top, with the text 'Probability (Gaussian)' being truncated and not fully visible."
+        }
+      ]
+    },
+    {
+      "run_id": "153",
+      "errors": []
+    },
+    {
+      "run_id": "155",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The first plot does not use the specified function mapping p, q to x, y, z; instead, it plots a Mobius strip using a different formula."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The first plot uses a Mobius strip function instead of the specified function mapping p, q to x, y, z using sin(p) * cos(q * pi)."
+        }
+      ]
+    },
+    {
+      "run_id": "156",
+      "errors": []
+    },
+    {
+      "run_id": "161",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows exp(t) as a red line on the left y-axis and sin(2πt) as a blue line on the right y-axis, but the data for exp(t) is incorrectly plotted as a straight line instead of an exponential curve, and the sin(2πt) series is missing the expected oscillatory pattern."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The left y-axis is not logarithmic; it is linear, and the exp(t) series is plotted on the right y-axis instead of the left."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The y-axis label 'sin' is partially cut off at the bottom edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "163",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The marker indicating the maximum value of f(x,y) is incorrectly placed at (np.argmax(Z), np.argmin(Z)), which corresponds to the wrong coordinates due to incorrect indexing of the grid."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The marker indicating the maximum value of f(x,y) is incorrectly placed at (np.argmax(Z), np.argmin(Z)), which corresponds to the wrong grid point due to incorrect indexing of the 2D array Z."
+        }
+      ]
+    },
+    {
+      "run_id": "164",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The first broken bar is incorrectly placed at y=10 with segments at 98 and 128, but the y-tick labels are reversed: 'Bill' is at 10 and 'Jim' is at 20, which contradicts the task's requirement that Bill should be at y=10 and Jim at y=20."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The y-axis tick labels are reversed; 'Bill' is at y=20 and 'Jim' is at y=10, but the task requires 'Bill' at y=10 and 'Jim' at y=20."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'race interrupted' is partially cut off by the right edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "165",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The y-axis does not start at 0; it starts at approximately 35, violating the requirement that the y-axis must start at 0."
+        }
+      ]
+    },
+    {
+      "run_id": "166",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot is a rectangular bar chart, not a polar bar plot as required."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart is a Cartesian bar plot, not a polar bar plot as required."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "Text labels for items are cut off at the top edge of the image, making them hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "167",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows the Shasta reservoir data as the blue line and Oroville as the orange line, which is the opposite of the required labeling."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The legend labels are incorrect; 'Oroville' is shown as blue and 'Shasta' as orange, but the lines are the opposite color."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Peak: 3452.7 TAF (week 17)' is partially cut off by the right edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "168",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "169",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The x-axis of the scatter plot is incorrectly labeled as 'x' but the data points are not within the range -4 to 4, and the marginal histograms are misaligned and incorrectly scaled, with the x-axis histogram showing values up to 100 and the y-axis histogram showing values up to 100, indicating a scaling error."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The x-axis of the scatter plot is not limited to -4..4 as required, and the marginal histograms are incorrectly oriented and positioned, causing misalignment with the main plot."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The x-axis label 'x' is cut off at the bottom edge of the image, making it partially unreadable."
+        }
+      ]
+    },
+    {
+      "run_id": "170",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The second row plots use data of size 80x70, but the horizontal plot shows only 8 events and the vertical plot shows only 8 events, indicating incorrect data size usage."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The second row plots use data of size 80x70, but the horizontal plot shows 80 events on the y-axis while the vertical plot shows 160 events, indicating a mismatch in the data dimensions used for the plots."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "Text in the bottom-left plot is severely compressed and illegible due to overlapping labels and small font size."
+        }
+      ]
+    },
+    {
+      "run_id": "171",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "173",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The integral formula text is incorrectly rendered as LaTeX code instead of being properly formatted."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The shaded region does not fill the area between the curve and the x-axis over the interval [3, 10], but instead fills a rectangular area from y=0 to the maximum y-value of the shaded region."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text label containing the integral expression is partially cut off at the top edge of the image, making it hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "175",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows four layers with colors purple, orange, grey, and pink, but the y-axis labels are incorrect; they should correspond to the discrete y values (0, 1, 2, 3) but are instead labeled as y = 3, y = 2, y = 1, y = 0 in reverse order, and the legend is not properly aligned with the actual data layers."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The plot uses a 2D subplot instead of a 3D subplot, and the y-axis labels are not set to the discrete values of the data."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The legend text is partially cut off at the top edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "177",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The figure shows a bar chart instead of a pie chart for fruit distribution, and the stacked bar chart incorrectly represents all age groups as having equal total height, with no connection lines from the pie chart slice."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The figure displays a bar chart and a stacked bar chart instead of the required pie chart and stacked bar chart."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Over 50' in the legend of the stacked bar chart is partially cut off by the edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "180",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows a surface that does not span a full circle, as the data points are only in the positive quadrant (x > 0, y > 0), whereas the task requires the points to span a full circle."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The plot title does not match the required text; it shows 'Filled 3D Tricountour Plot' instead of 'Filled 3D Tricontour Plot'."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Raidii: 0.2 to 1.2, Full Circle' is partially cut off at the top edge of the image, making it hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "181",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "183",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The figure includes data for Africa, but the task requires only Asia and Europe."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart includes countries from Africa, but the task requires only Asia and Europe."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "Text labels inside the sunburst chart are partially cut off by the inner circle, making them hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "191",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart does not display a sunburst structure; instead, it shows a treemap layout with incorrect color coding and missing hierarchy."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart is a treemap, not a sunburst chart as required by the task."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Overall score 0-100, 100 = best environment' at the bottom is cut off by the image edge, making it partially unreadable."
+        }
+      ]
+    },
+    {
+      "run_id": "195",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The ZX Plane Projection incorrectly shows 'Engine Displacement (cc)' on the z-axis instead of the x-axis, and the x-axis is labeled 'Power (kW)' while it should be '0-60 mph (sec)'."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The ZX Plane Projection incorrectly labels the z-axis as 'Engine Displacement (cc)' instead of '0-60 mph (sec)'."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The color bar label 'Engine Displacement (cc)' is partially cut off at the right edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "196",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The beeswarm plot for Group 1 is shown in orange instead of blue, and Group 2 is shown in blue instead of orange, violating the color assignment specified in the task."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The beeswarm plot for Group 1 is colored orange instead of blue, and Group 2 is colored blue instead of orange, violating the specified color requirements."
+        }
+      ]
+    },
+    {
+      "run_id": "199",
+      "errors": []
+    },
+    {
+      "run_id": "200",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The beeswarm plot for Group 2 is incorrectly colored white instead of orange, and the legend incorrectly labels Group 2 as 'Group 2' with a white marker."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The y-axis label is 'Value' instead of the required label."
+        }
+      ]
+    },
+    {
+      "run_id": "202",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The x-axis label is incorrectly placed as 'Four separate samples' under the x-axis, but the task requires it to be labeled as 'Four separate samples' on the x-axis of both subplots, which is not correctly aligned with the data labels."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "Text at the bottom of the left plot is cut off by the image edge, making 'Four separate samples' partially unreadable."
+        }
+      ]
+    },
+    {
+      "run_id": "203",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot uses a Cartesian projection instead of a polar projection, and the title does not match the requested title."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The plot uses a Cartesian projection instead of a polar projection."
+        }
+      ]
+    },
+    {
+      "run_id": "204",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plotted mean yield for Cat-C is incorrect; it shows approximately 50% instead of the correct value of 58.2%."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The y-axis does not start at 0; it starts at approximately 35, violating the requirement that the y-axis must start at 0."
+        }
+      ]
+    },
+    {
+      "run_id": "205",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The diagram shows the flow in reverse order, starting from 'Hurray!' and ending at 'Phase 1', which contradicts the required sequential flow from 'Phase 1' to 'Hurray!'"
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The diagram shows the phases in reverse order, starting with 'Hurray!' and ending with 'Phase 1', which contradicts the required sequential flow from 'Phase 1' to 'Hurray!'"
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Hurray!' is partially cut off by the left edge of the image, making it hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "206",
+      "errors": [
+        {
+          "family": "hard_to_read",
+          "evidence": "The legend text 'Parametric Curve' and 'Error Bars' is partially cut off at the top edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "208",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "209",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The beeswarm plot for Group 1 is colored orange instead of blue, and the beeswarm plot for Group 2 is colored blue instead of orange, violating the specified color assignments."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The title of the plot is incorrect; it reads 'Beeswarm plot and Boxplots, made with matplotliblib' instead of 'Beeswarm plot and Boxplots, made with matplotlib'."
+        }
+      ]
+    },
+    {
+      "run_id": "210",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows the Rossler attractor with the correct title and axes labels, but the axes are labeled 'u', 'v', and 'w' as required, yet the plot appears to have incorrect axis scaling or data, as the values on the w-axis go up to 40, which is inconsistent with the expected behavior of the Rossler system with the given parameters and initial conditions."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The axes labels are incorrect; the plot shows 'u', 'v', and 'w' as axes, but the actual labels are 'u', 'v', and 'w' in the wrong order, with 'w' labeled as 'v' and 'v' as 'w'."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The label 'v' on the y-axis is partially cut off at the edge of the image, making it hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "212",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows only two species (setosa and versicolor) with ellipsoids, missing the virginica species entirely."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The legend does not clearly identify each species by its corresponding color, as the labels are partially cut off and not fully visible."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The label 'se' is partially cut off at the left edge of the plot, making it hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "213",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The figure shows incorrect quartile values (Q1=642, Median=714, Q3=777) that do not match the calculated values from the data (Q1=635, Median=716, Q3=802)."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The box plot is not axis-free; y-axis ticks and labels are present."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Q1 = 642 Median = 714 Q3 = 777' is partially cut off at the top edge of the image, making it hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "214",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The legend labels are incorrect; the frequencies are labeled as 100 Hz, 200 Hz, 300 Hz, 400 Hz, and 500 Hz, but the data does not support these labels as the actual frequency values are not provided in the CSV."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The y-axis label is 'Frequency (Hz)' but the axis values are 0, 1, 2, 3, 4, which does not match the expected frequency labels (100, 200, 300, 400, 500 Hz) and the y-axis is not elongated to twice the length of the x-axis."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The legend text is partially cut off at the top edge of the image, making it hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "216",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart shows incorrect data values; for example, the Agree bar for Open Floor Plans is shown as approximately 45% but should be 28%, and the Disagree bar for Open Floor Plans is shown as approximately 48% but should be 48%, indicating a mismatch in the plotted values for some categories."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The legend labels do not match the required text: the legend shows 'Agree', 'Neutral', 'Disagree' but the colors are incorrect (Agree is blue, Neutral is orange, Disagree is green) and the legend entries are not in the correct order as per the code."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text 'Highest disagreement: Open Floor Plans (48%)' is cut off at the top edge of the image."
+        }
+      ]
+    }
+  ]
+}

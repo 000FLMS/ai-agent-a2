@@ -1,0 +1,8 @@
+{
+  "task_id": "parallel-coordinates-normalization",
+  "task_class": "complex-layout",
+  "instructions": "Read systems.csv and create a parallel-coordinates plot with one polyline for each system. Use the axes in exactly this order: latency_ms, error_rate_pct, throughput_mbps, energy_wh. Normalize each metric independently across all eight systems using (value - column minimum) / (column maximum - column minimum); do not reverse any axis. Place ticks at 0, 0.5, and 1 on every normalized axis. Color lines consistently by cohort (Reference or Candidate), and include a legend for the cohorts. Label each vertical axis with its metric name and its original minimum and maximum values. Title the plot 'System Profiles (Column-wise Min-Max Scaling)'. Save the figure as figure.png.",
+  "inputs": [
+    {"name": "systems.csv", "path": "inputs/systems.csv"}
+  ]
+}

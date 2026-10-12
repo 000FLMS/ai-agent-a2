@@ -1,0 +1,8 @@
+{
+  "task_id": "cumulative-net-sales",
+  "task_class": "relational-data-transformations",
+  "instructions": "Read transactions.csv, which contains transaction-level sales; negative amounts are refunds and must remain negative. First sum net sales by date and product, then sort dates chronologically and compute a separate cumulative sum over dates for each product. Plot one line per product using those cumulative totals. Label the axes 'Date' and 'Cumulative net sales ($)', include a legend, and title the chart 'Cumulative Net Sales by Product'. Save the figure as figure.png.",
+  "inputs": [
+    {"name": "transactions.csv", "path": "inputs/transactions.csv"}
+  ]
+}

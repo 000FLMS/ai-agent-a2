@@ -1,0 +1,1175 @@
+{
+  "predictions": [
+    {
+      "run_id": "001",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "004",
+      "errors": []
+    },
+    {
+      "run_id": "008",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart is a Sankey diagram, but the layout does not match the requested design. The sources are not on the left and targets on the right as specified. The figure has a title, but the legend is not properly mapped to the fruit labels with consistent colors. The figure size and DPI are correct, but the visual representation does not clearly depict the flow from source to target with distinct separation between the left and right sides."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The figure has overlapping text and elements covering content. The labels for the source and target nodes are partially cut off at the edges of the image, and the legend at the bottom is partially obscured by the figure's layout. Additionally, the flow lines are dense and overlapping, making it difficult to distinguish individual flows, especially in the central area of the diagram."
+        }
+      ]
+    },
+    {
+      "run_id": "009",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization shows incorrect version numbers and dates, with v1.4.3, v2.0.1, v2.2.1, and v3.0.3 appearing multiple times, and the timeline is misaligned with the provided data."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart title is incorrect, showing 'Matplotlib Release Dates' instead of the required 'Matplotlib Release Dates'."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The x-axis tick labels are rotated at 0 degrees and are overlapping, making them difficult to read, and the title is misspelled as 'Matplotlib' instead of 'Matplotlib Release Dates'."
+        }
+      ]
+    },
+    {
+      "run_id": "010",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "013",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization uses the 'rainbow' colormap, which violates the requirement to use the reversed plasma colormap. Additionally, the x-axis extends from -5 to 25, which is outside the requested range of 0 to 20. The y-axis is labeled as 'lambda' instead of 'Y Axis', and the z-axis is labeled as 'probability' instead of 'Z Axis'. The title is also different from the requested one."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart uses the rainbow colormap, which is explicitly forbidden in the requirements. The requirements state to use the reversed plasma colormap and not to use the jet, rainbow, or hsv colormaps. The figure uses a rainbow colormap instead of the required reversed plasma colormap."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The x-axis label 'x' is partially clipped at the bottom of the image, and the y-axis label '$\\\\lambda$' is partially cut off on the right side. The z-axis label 'probability' is also partially cut off at the top right. These clipped labels make the plot difficult to read."
+        }
+      ]
+    },
+    {
+      "run_id": "016",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization does not correctly transform the data as requested. The inner ring shows browser names, but the outer ring displays version labels with lines pointing to them, which is not the correct structure. The chart shows a single ring with all versions, not two concentric rings. The inner ring should display browser names, and the outer ring should show versions, but the current chart has the versions in the outer ring and the browsers in the inner ring, which is incorrect. Additionally, the chart does not show the correct data for the versions, as some versions with shares below 0.5% are still included, and the data is not properly aggregated by browser."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart does not follow the requested design. The inner ring displays browser names, but the outer ring shows versions with lines pointing to them, which is not the requested layout. The chart is a donut chart with two concentric rings, but the inner ring is not labeled with browser names directly on the segments, and the outer ring is not clearly labeled with lines pointing to the segments. The title is correct, but the legend is not shown, and the figure size is not 11 by 11 inches. The chart also does not drop versions with share below 0.5%."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The chart has overlapping text and lines, with many version labels overlapping each other and the lines pointing to them. The labels are small and crowded, making it difficult to read the version names clearly. The outer ring labels are particularly hard to read due to the high density of segments and overlapping lines."
+        }
+      ]
+    },
+    {
+      "run_id": "021",
+      "errors": []
+    },
+    {
+      "run_id": "022",
+      "errors": []
+    },
+    {
+      "run_id": "023",
+      "errors": []
+    },
+    {
+      "run_id": "025",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization does not correctly transform the data as requested. The chart is a pie chart with country labels and percentages, but it should be a sunburst chart structured by 'Major Area', 'Regions', and 'Country' hierarchy. The 'Overall score' values are not used to determine segment sizes, and the color coding for regions is missing. The chart also lacks the required title and subtitle formatting."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart is a pie chart, not a sunburst chart as requested. The hierarchy based on 'Major Area', 'Regions', and 'Country' is not represented. The center is hollow, but the chart does not use the specified color coding for regions. The legend is missing, and the title and subtitle are present but the overall design does not match the requirements."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The figure is unreadable due to overlapping text and squeezed layout. The country labels are densely packed around the outer ring, causing severe overlap and making them difficult to read. Additionally, the percentage values are also overlapping and hard to distinguish. The central area is hollow, but the overall layout is cramped, and the text is too small to be clearly legible."
+        }
+      ]
+    },
+    {
+      "run_id": "026",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization does not correctly transform the data as requested. The chart shows a single gray circle with '/CAfrica' text in the center, which is not a valid sunburst chart. The hierarchy of 'Major Area', 'Regions', and 'Country' is not represented, and the 'Overall score' values are not used to determine segment sizes. The color coding for regions is also not properly applied, as the legend shows the correct colors but the chart itself doesn't display the corresponding colored segments. The chart appears to be completely incorrect and does not represent the data from the CSV file."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart is not a sunburst chart as requested. Instead, it shows a simple concentric circle with text '/CAfrica' in the center, which is not a valid representation of the hierarchical data. The chart does not display the hierarchy of 'Major Area', 'Regions', and 'Country' as required. The legend is present but the colors do not correspond to the correct regions. The center is not hollow as requested. The title and subtitle are present but the overall visualization does not match the sunburst chart specification."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The figure has multiple issues that make it unreadable. The title and subtitle are partially cut off at the top. The text in the center of the chart is distorted and unreadable (appears as '/CAfrica:'). The legend at the bottom is present but the text is too small to read clearly. The concentric circles are drawn in shades of gray, making it impossible to distinguish between different regions as required by the color coding. The overall layout is squeezed and lacks proper labeling, making the data indistinguishable."
+        }
+      ]
+    },
+    {
+      "run_id": "028",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart type is incorrect. The task requires a polar coordinate diagram with 12 sectors representing months, but the image shows a circular scatter plot with data points scattered around the circle without proper sector organization. The blue line connecting 2015 data points is present, but the overall structure does not match the required polar projection with 12 distinct month sectors. The title is also incorrect, showing 'Monthly Highest Temperature in Amherst (2004-2015)' but the image shows 'Monthly Highest Temperature in Amherst (2004-2015)' with a different formatting. The legend is missing, and the data points are not properly offset to prevent alignment along a single radial line."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The title is clipped at the top of the image, with the last part of the title '2015)' being cut off. Additionally, the legend is partially cut off on the right side, making it difficult to read the full label."
+        }
+      ]
+    },
+    {
+      "run_id": "029",
+      "errors": []
+    },
+    {
+      "run_id": "030",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The figure title is 'Shared axes' instead of the required 'Sharing x per column, y per row'. The data transformations are incorrect: the plots use w and z as sine functions, but the instructions require specific mathematical transformations like z vs w, z**3 vs w, -z vs w+1, etc. The plots are not correctly labeled with the required transformations, and the axis labels are 'w' and 'z' instead of the required 'x' and 'y'. The color scheme does not match the requested colors for each plot."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The figure title is incorrect. The requested title is 'Sharing x per column, y per row', but the displayed title is 'Shared axes'. Additionally, the x-axis labels are inconsistent across subplots, with different ranges and labels (w, w, w) that don't match the expected shared axis behavior. The y-axis labels are also missing from most subplots, and the outermost subplots are not properly labeled as required."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The figure title is clipped at the top, with the text 'Shared axes' partially cut off. The x-axis labels in the bottom row are also partially cut off at the bottom edge of the image. The y-axis labels are also partially cut off on the left side. The overall layout is too tight, causing text to be clipped at the edges."
+        }
+      ]
+    },
+    {
+      "run_id": "031",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart uses a different color scheme than requested: the legend shows blue for Agree, orange for Neutral, and green for Disagree, but the bars are colored blue, orange, and green respectively, which is inconsistent with the legend. Additionally, the text annotation is placed at the top of the chart instead of near the highest disagreement bar, and the y-axis label is 'Percent of Respondents' instead of 'Percent of Respondents' as requested."
+        }
+      ]
+    },
+    {
+      "run_id": "034",
+      "errors": []
+    },
+    {
+      "run_id": "038",
+      "errors": []
+    },
+    {
+      "run_id": "039",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot does not correctly represent the line y=x with longitude ranging from -180 to 180. Instead, the y-axis is labeled 'Latitude (Mercator)' and the plotted line shows a Mercator-transformed curve, which is not a straight line. The transformation applied distorts the line, making it non-linear, and the y-axis values are not in degrees but in Mercator projection units. The plot also does not show the full range of longitude from -180 to 180, as the line appears truncated at the edges."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The y-axis label is incorrectly labeled as 'Latitude (Mercator)' instead of 'Latitude', and the title is misspelled as 'Mercator Projection' instead of 'Mercator projection'. Additionally, the plot does not show a straight line y=x due to the Mercator transformation applied to latitude, which distorts the line into a curve. The grid is present, but the overall design does not match the requested straight line with proper Mercator scaling."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The y-axis label 'Latitude (Mercator)' is partially clipped at the top edge of the image, and the title 'Mercator Projection' is cut off at the top. Additionally, the y-axis tick labels are not fully visible, and the overall layout appears squeezed, making it difficult to read the full content."
+        }
+      ]
+    },
+    {
+      "run_id": "046",
+      "errors": []
+    },
+    {
+      "run_id": "047",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization does not meet the requirements. The chart shows only one bar with a single blue segment, which appears to represent only the 'renewables' source for a single country (France), but the data for all countries and all three sources (Nuclear, Fossil, Renewables) are missing. The x-axis label is 'Country' with a value '47.9' which is not a country name. The legend shows only one source, '(Percentage, renewables)'. The stacked bar chart is not properly formed with three segments for each country. The data transformation to percentages of each country's total is not correctly applied, and the plot does not show the correct number of bars or segments."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart does not meet the requirements. It is not a stacked bar chart with three segments (Nuclear, Fossil, Renewables) for each country. Instead, it shows a single bar for one country with a label '47.9' and a legend entry '(Percentage, renewables)', which is incorrect. The x-axis label is 'Country' but should display the country names in the specified order. The y-axis is labeled correctly as 'Percentage Share (%)', but the chart lacks the required stacked segments and proper legend for all three sources."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The chart is severely misformatted. It only shows a single bar for one country (France) with a single color (blue), which is incorrect. The x-axis label is 'Country' but the tick label is '47.9', which is a value, not a country name. The y-axis is labeled 'Percentage Share (%)' correctly, but the data is not properly stacked by source. The legend is incorrect, showing only one source. The title is present but the overall visualization is unreadable and does not meet the requirements for a 100% stacked bar chart with three sources per country."
+        }
+      ]
+    },
+    {
+      "run_id": "050",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The flow value from Phase 5 to Hurray! is shown as 20%, but the requested value is 10%. The flow values are incorrect, with the final transition showing 20% instead of the required 10%."
+        }
+      ]
+    },
+    {
+      "run_id": "051",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The first panel is titled 'Varying density' but the title should be exactly 'Varying Density' (capital D). The title text does not match the requested exact text."
+        }
+      ]
+    },
+    {
+      "run_id": "052",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The figure does not meet the requested specifications. The sharp interface is not represented as a green vertical line at x=0 with horizontal lines at y=0 for x<0 and y=1 for x>0. Instead, the sharp interface is shown as a white vertical line. The text annotations are incorrect, with the composition equation appearing twice and the parameter values not properly formatted. The arrow annotation is present but not pointing to the intersection of the blue and orange curves. The legend is present but the labels are incorrect. The colors of the curves are not blue and orange as requested. The title is different from what was requested. The x-axis label is 'x' and y-axis label is 'y' as required, but the overall design does not match the specifications."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The text annotations for the equations are clipped at the top of the plot, making them partially cut off. The text 'Phase Field: 1/2 * (1 + tanh(gamma * x))' and 'Composition: 1/2 * (1 + tanh(omega * x))' are not fully visible, and the parameter values 'γ = 1.0' and 'Ω = 2.0' are also partially cut off. Additionally, the arrow annotation and its label 'intersection' are overlapping with the curves, making it difficult to read."
+        }
+      ]
+    },
+    {
+      "run_id": "053",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "055",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The annotation text 'Peak: 412 visits' is missing from the chart. The chart also does not show the text at the specified data coordinates (x=3.0, y=430.0), and the y-axis does not start at zero as required. The y-axis range is incorrect, cutting off the data at 0 and not extending to at least 430. The title and axis labels are present, but the annotation is missing, which is a required element."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The annotation text 'Peak: 412 visits' is partially clipped at the top edge of the image, making it difficult to read. The text is cut off at the top, which violates the requirement for readable text."
+        }
+      ]
+    },
+    {
+      "run_id": "059",
+      "errors": []
+    },
+    {
+      "run_id": "060",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The title of the chart is incorrect. The requested title is 'Fishbone diagram: Decreased Sales Performance', but the image shows 'Fishbone diagram: Decreased Sales Performance' with a typo in the title (missing colon after 'Fishbone diagram')."
+        }
+      ]
+    },
+    {
+      "run_id": "062",
+      "errors": []
+    },
+    {
+      "run_id": "065",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "068",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows a straight line y=x, but the y-axis values are not correctly transformed using the Mercator projection formula. The Mercator projection scales latitudes exponentially, but the plot shows a linear relationship between longitude and latitude, which is incorrect. The y-axis values should be transformed using the formula y = ln(tan(π/4 + φ/2)), but the plot does not reflect this transformation."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The title is incorrect; it shows 'Mercator projection' with a typo ('Mercator' instead of 'Mercator'). The x-axis limits are incorrect; they extend from -200 to 200 instead of -180 to 180. The y-axis label is missing. The grid is missing. The line style is solid instead of dotted. The figure does not follow the requested Mercator projection scaling."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The x-axis label 'Longitude' is clipped at the bottom of the image, and the title 'Mercator projection' is partially cut off at the top. The x-axis limits extend beyond -180 to 180, showing -200 to 200, which violates the requirement to set x-axis limits to -180 to 180."
+        }
+      ]
+    },
+    {
+      "run_id": "069",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart is a sunburst chart with the correct hierarchy (Major Area, Regions, Country) and values from 'Overall score'. The center is hollow. The title is 'Global Food Security Index, 2020' with the subtitle 'Overall score 0-100, 100 = best environment'. The figure is 10x10 inches at 100 dpi, resulting in 1000x1000 pixels. The legend shows the correct colors for the regions: Europe (dark green), Asia (yellow), Americas (blue), Oceania (purple), and Africa (green). However, the legend shows two entries for Africa (one green and one light green), which is incorrect. The legend should have only one entry for Africa with the correct color (green). This is a failure in the legend representation."
+        }
+      ]
+    },
+    {
+      "run_id": "070",
+      "errors": []
+    },
+    {
+      "run_id": "074",
+      "errors": [
+        {
+          "family": "hard_to_read",
+          "evidence": "The legend is partially clipped at the top right corner of the image, making it difficult to read. The text 'exp(t)' and 'sin(2πt)' in the legend is cut off, which violates the requirement for readable text."
+        }
+      ]
+    },
+    {
+      "run_id": "075",
+      "errors": []
+    },
+    {
+      "run_id": "077",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows the wrong reservoir data: the blue line is labeled 'Oroville' but represents Shasta's data, and the orange line is labeled 'Shasta' but represents Oroville's data. This is a wrong selection of data series."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart does not meet the requirements because the Oroville and Shasta reservoirs are plotted with incorrect colors and labels. The Oroville line is blue, but the legend incorrectly labels it as 'Oroville' with a blue line, while the Shasta line is orange, but the legend labels it as 'Shasta' with an orange line. However, the actual data shows that the Oroville reservoir has higher storage values than Shasta, but the plot shows the opposite. Additionally, the peak point for Oroville is marked with a red dot, but the annotation text is incorrect, showing 'Peak: 3452.7 TAF (week 17)' which is not the correct peak value for Oroville. The peak value for Oroville is 3452.7 TAF, but it occurs in week 17, which is correct. However, the peak value for Shasta is 3171.5 TAF in week 17, which is not marked. The y-axis does not start at 0, and the title is incorrect. The x-axis label is 'Week', but the y-axis label is 'Water Storage (TAF)', which is correct. The legend is present, but the labels are incorrect. The chart type is correct, but the layout, axes, and annotations are incorrect."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The annotation text 'Peak: 3452.7 TAF (week 17)' is partially clipped by the top edge of the image, making it difficult to read. The text is cut off at the top, which violates the requirement for readable text."
+        }
+      ]
+    },
+    {
+      "run_id": "079",
+      "errors": []
+    },
+    {
+      "run_id": "080",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart does not display the checkout count above each bar as required. The bars are present, the x-axis labels are correct, the y-axis starts at 0, and the title and axis labels are present, but the numerical values (e.g., 4128, 3907) are missing from above the bars."
+        }
+      ]
+    },
+    {
+      "run_id": "081",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization is a 2D heatmap instead of a 3D voxel plot as requested. The axes are labeled 'r' and 'g' but there is no 'b' axis, and the plot does not show a cube centered at [0.5, 0.5, 0.5] with side length 0.5. The data transformation is incorrect, as the plot does not represent a 3D voxel structure with RGB color channels."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The generated image is a 2D heatmap, not a 3D voxel plot as requested. The axes are labeled 'r' and 'g' but there is no 'b' axis, and the plot lacks the required 3D structure. The figure does not show a cube or any voxel representation, and the aspect ratio is not equal as required."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The figure is not a 3D voxel plot as requested. Instead, it appears to be a 2D color gradient plot with axes labeled 'r' and 'g', but no 'b' axis. The plot is missing the 3D aspect, the cube structure, and the proper voxel visualization. The title is also missing. The image does not meet the requirements for a 3D voxel plot with the specified cube and RGB color channels."
+        }
+      ]
+    },
+    {
+      "run_id": "082",
+      "errors": []
+    },
+    {
+      "run_id": "083",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The second row of plots uses gamma-distributed data with size 80x70, but the visualized data shows 80 categories on the y-axis and 20 events on the x-axis, which does not match the requested 80x70 data dimensions. The horizontal event plot (Gamma) shows 80 categories and 20 events, while the vertical event plot (Gamma) shows 80 categories and 20 events, but the data should be 80x70, meaning 80 categories and 70 events. The event axis should extend to 70, not 20, indicating a mismatch in data dimensions."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The second row of the figure uses scatter plots instead of event plots as requested. The data for the second row is gamma-distributed (80x70), but the visualization shows individual points (scatter) rather than event lines. The line offsets, line lengths, and colors specified in the task are not applied, and the plots do not match the required event plot style."
+        }
+      ]
+    },
+    {
+      "run_id": "086",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization shows incorrect bar colors. In the first chart, bars should be blue if y > 0 and orange otherwise, but some bars with positive y values are orange, and some with negative y values are blue. In the second chart, the same color logic is violated, with incorrect color assignments for both positive and negative y values."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart type is incorrect. The first subplot shows a bar chart with uniform transparency, but the bars are not colored blue for positive y values and orange for negative y values as required. Instead, the bars are colored blue for positive y values and a light yellow/orange for negative y values, which does not match the specified color scheme. Additionally, the second subplot shows bars with adjusted transparencies, but the colors are not correctly applied (blue for positive y values and orange for negative y values). The transparency values are also not correctly normalized, and the sum of face alpha and edge alpha is not 1 for each bar. The titles and axis labels are correct, but the color and transparency requirements are not met."
+        }
+      ]
+    },
+    {
+      "run_id": "087",
+      "errors": []
+    },
+    {
+      "run_id": "089",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "090",
+      "errors": []
+    },
+    {
+      "run_id": "091",
+      "errors": []
+    },
+    {
+      "run_id": "096",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "097",
+      "errors": []
+    },
+    {
+      "run_id": "098",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization does not meet the requirement of having two plots on the same axes with different left and right scales. Instead, both data series are plotted on the same y-axis, which is incorrect. The data1 (np.exp(t)) is correctly plotted, but data2 (np.sin(2 * np.pi * t)) is shown with a very small amplitude due to being plotted on the same scale as data1, which is inappropriate. The task requires a secondary y-axis for one of the datasets to properly display both plots with their respective scales."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The task required two plots on the same axes with different left and right scales, but the generated figure uses a single y-axis for both data series, failing to implement twin axes. The plot shows data1 (np.exp(t)) and data2 (np.sin(2 * np.pi * t)) on the same y-axis, which does not meet the requirement of having different left and right scales."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The plot shows overlapping text in the legend, where the labels 'Data 1' and 'Data 2' are partially obscured by the line markers. Additionally, the data for 'Data 2' (sinusoidal wave) is barely visible due to its low amplitude compared to 'Data 1' (exponential growth), making it difficult to distinguish the two series. The y-axis scale is dominated by the exponential data, causing the sinusoidal data to appear as a nearly flat line at the bottom, which may lead to misinterpretation."
+        }
+      ]
+    },
+    {
+      "run_id": "099",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows a polar bar plot with 30 bars, but the bars are not properly colored based on normalized diameters. The colors appear to be randomly assigned rather than following a gradient from dark to light based on the diameter values. Additionally, the plot title is 'Polar bar plot with 30 random bars' which does not match the requested title. The y-ticks are not removed, and the gridlines are not visible, indicating that the requirements for removing y-ticks and keeping gridlines on are not met."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart is a polar bar plot with 30 bars, but the y ticks (radial tick labels) are not removed as required. The chart also shows radial tick labels (2, 4, 6, 8, 10) which should be entirely removed. Additionally, the title is incorrect; it should be 'Polar Bar Plot' but the image shows 'Polar bar plot with 30 random bars'. The figure size is 7x7 inches, but the chart does not meet the requirement of removing y ticks and has an incorrect title."
+        }
+      ]
+    },
+    {
+      "run_id": "103",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "104",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The annotation text reads 'Peak: 412 visits', which is correct, but the y-axis value for Thursday is incorrectly labeled as 412 in the annotation, while the actual data point for Thursday is 412. However, the y-axis scale is incorrect: the y-axis shows values up to 400, but the data point for Thursday is 412, which is above the y-axis limit. This indicates a scaling issue where the y-axis does not properly accommodate the maximum value, leading to a misrepresentation of the data. The y-axis should start at 0 and extend to at least 412, but it appears to be capped at 400, causing the data point to be cut off or misrepresented."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The annotation text 'Peak: 412 visits' is incorrectly rendered as 'Peak: 412 visits' with a typo in the visit count (412 vs 412), but the text is placed at the correct location (x=3.0, y=430.0) and points to Thursday's value. However, the y-axis label is missing, and the title is present but the x-axis label is incorrect (it should be 'Day of Week' but is not clearly visible). The chart type is correct (line chart), but the y-axis does not start at zero (it starts at 0 but the scale is not properly aligned with the data). The annotation text is correct, but the overall layout and axis labels are not properly formatted."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The annotation text 'Peak: 412 visits' is partially clipped at the top edge of the image, making it difficult to read. The text is cut off and not fully visible within the frame."
+        }
+      ]
+    },
+    {
+      "run_id": "105",
+      "errors": []
+    },
+    {
+      "run_id": "106",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot title is incorrect. The requested title is 'Filled 3D tricontour', but the generated plot shows 'Filled 3D tricountour' (misspelled as 'tricountour'). This is a clear deviation from the specified requirements."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The title of the plot is 'Filled 3D tricountour' instead of the required 'Filled 3D tricontour'. There is a typo in the title."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The title 'Filled 3D tricontour' is clipped at the top of the image, with the last letter 'r' partially cut off. The z-axis label 'z' is also partially cut off at the top right of the plot. These clipped text elements make the figure difficult to read."
+        }
+      ]
+    },
+    {
+      "run_id": "108",
+      "errors": []
+    },
+    {
+      "run_id": "111",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart title is incorrect; it should be '3D Bar Plot with Y=k Layers' but is shown as '3D Bar Plot with Y=k Layers' with a typo in the title. Additionally, the colors used do not match the requested colors: 'purple', 'orange', 'grey', and 'pink'. Instead, the plot uses shades of purple, orange, grey, and pink, but the last bar of each set is not colored black as required. The opacity is also not 80% as requested, and the z-axis label is missing."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The y-axis labels are partially clipped at the bottom of the image, making them difficult to read. The labels 'y=0', 'y=1', 'y=2', and 'y=3' are cut off, and the text is not fully visible. Additionally, the x-axis labels are rotated and overlapping, which makes them hard to read. The title is also partially cut off at the top."
+        }
+      ]
+    },
+    {
+      "run_id": "112",
+      "errors": []
+    },
+    {
+      "run_id": "115",
+      "errors": []
+    },
+    {
+      "run_id": "117",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot is 2D instead of 3D, missing the 'w' axis and the 3D perspective. The title is also misspelled as 'Rossler' instead of 'Rossler Attractor'. The axes are labeled 'u' and 'v' but 'w' is missing, and the plot does not show a 3D trajectory."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The plot is 2D instead of 3D as required. The axes are labeled 'u' and 'v', but there is no 'w' axis. The plot does not show a 3D trajectory, and the z-axis is missing. The title is correct, but the chart type and projection are incorrect."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The plot is not a 3D plot as requested; it is a 2D projection. The title 'Rossler Attractor' is present but misspelled as 'Rossler Attractor'. The axes are labeled 'u' and 'v', but the 'w' axis is missing. The figure is not properly rendered in 3D, making it difficult to interpret the Rossler attractor correctly."
+        }
+      ]
+    },
+    {
+      "run_id": "124",
+      "errors": []
+    },
+    {
+      "run_id": "125",
+      "errors": []
+    },
+    {
+      "run_id": "126",
+      "errors": [
+        {
+          "family": "hard_to_read",
+          "evidence": "The integral formula text is partially clipped at the bottom of the shaded region, and the y-axis label 'y' is cut off at the top of the image. The title is also partially cut off at the top. These clipping issues make the text difficult to read."
+        }
+      ]
+    },
+    {
+      "run_id": "128",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization does not correctly transform the data as requested. The y-axis shows multiple discrete values (from -5 to 5), but the instruction specifies that the bars should be plotted on the plane y=k with only discrete values that data is available for. The plot shows multiple y-values (layers) instead of a single fixed y=k plane. Additionally, the colors used in the plot do not match the requested colors (purple, orange, grey, pink) and the last bar of each set is not colored black as required."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart type is incorrect. The task requested a 3D bar plot with bars on the plane y=k, but the image shows a 3D bar plot with multiple layers along the y-axis (Y (Layer)) ranging from -5 to 5, which contradicts the requirement that all bars should be on the plane y=k. Additionally, the colors used are not the specified 'purple', 'orange', 'grey', and 'pink', and the last bar of each set is not colored black. The y-axis labels are not discrete values as requested, and the x-axis range is incorrect (showing 0 to 30 instead of 0 to 29)."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The figure has overlapping text and elements covering content. The title '3D Bar Plot with Multiple Data Layers' is partially cut off at the top. The y-axis label 'Y (Layer)' is partially obscured by the bars. The x-axis label 'X' is partially cut off at the bottom right. The z-axis label 'Z (Height)' is partially cut off on the left side. The bars are densely packed, causing some overlap and making it difficult to distinguish individual bars, especially in the center of the plot. The color scheme includes multiple shades that may be difficult to distinguish, particularly the purple, pink, and grey tones."
+        }
+      ]
+    },
+    {
+      "run_id": "129",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization is a horizontal bar chart, not a doughnut chart as requested. The data is presented as stacked bars for each year, not as concentric rings. The white section representing 'other' operating systems is at the end of each bar, not at the top of a ring. The legend is on the right side, not in the center of the doughnut. The chart does not meet the requirements for a doughnut chart with concentric rings for each year."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart is a horizontal stacked bar chart, not a concentric doughnut chart as requested. The data is displayed as separate bars for each year instead of concentric rings. The white section representing other operating systems is not aligned at the top of each ring, and there is no legend in the center of the doughnut. The title is correct, but the overall design does not match the requested doughnut chart format."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The figure is a horizontal bar chart, not a doughnut chart as requested. The data is displayed as stacked bars for each year, not as concentric doughnut rings. The title is correct, but the visualization type is incorrect. The legend is present but not in the center of the doughnut as required. The figure does not meet the requirements for a doughnut chart with concentric rings for each year."
+        }
+      ]
+    },
+    {
+      "run_id": "130",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart title is incorrect. The requested title was '3D Scatter Plot of Cars: Acceleration, Mileage, and Power', but the generated plot shows 'Cars: 0-60 time, mileage and power'. Additionally, the colorbar label is incorrect; it shows 'Engine displacement (cc)' instead of the requested 'Engine Displacement (cc)'. The colorbar also uses a non-perceptually uniform colormap (jet) instead of the required viridis."
+        }
+      ]
+    },
+    {
+      "run_id": "131",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization does not correctly transform the data as requested. The first row uses random uniform data (8x70) but the plots are not properly labeled as 'horizontal, uniform data' and 'vertical, uniform data'. The second row uses gamma-distributed data (80x70) but the plots are not properly labeled as 'horizontal, gamma data' and 'vertical, gamma data'. The data transformation is incorrect as the plots do not match the requested specifications."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The figure does not follow the requested chart design. The task required a 2x2 grid of subplots, but the image shows a 4x1 layout. The figure title 'Event plots' is present, but the subplot titles are incorrect (e.g., 'horizontal, uniform data' instead of 'Horizontal (Random)'). The colors, line offsets, and line lengths do not match the specified requirements (e.g., navy, darkgreen, crimson, darkorange). The data types are also incorrect (the first row uses uniform data instead of random data, and the second row uses gamma data but with incorrect parameters). The figure size and DPI are not verified, but the layout and content are fundamentally wrong."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The figure has overlapping text. The title 'Event plots' is partially cut off at the top edge of the image, and the labels 'horizontal, uniform data' and 'vertical, uniform data' are overlapping with the data in the plots. Additionally, the labels 'horizontal, gamma data' and 'vertical, gamma data' are overlapping with the data in the plots. The text is also too small to be easily readable."
+        }
+      ]
+    },
+    {
+      "run_id": "135",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization does not correctly represent the requested fishbone diagram. The main problem is labeled as 'Problem: Decreased Sales Performance' at the head, but the diagram shows 'Problem: Decreased Sales Performance' on the right side of the spine instead of at the head. The categories are not arranged in the correct order or positions as specified in the request. The causes are not properly connected to their respective categories, and the layout does not reflect the relationship between the main problem and its potential causes as requested."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart type is incorrect. The task requested a fishbone diagram with a central spine and branches at specific angles, but the output shows a different layout with a horizontal axis and text labels arranged vertically, which does not match the required fishbone structure. The main problem is not at the head of the diagram, and the categories and causes are not properly arranged as branches emanating from a central spine."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The diagram has overlapping text elements, particularly the category labels and cause labels, which are difficult to read due to close proximity and potential overlap. Some text is partially obscured by other elements, and the overall layout appears cramped, making it challenging to distinguish individual components clearly."
+        }
+      ]
+    },
+    {
+      "run_id": "136",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The y-axis tick labels are incorrectly assigned: 'Bill' is at the bottom (y=10) and 'Jim' is at the top (y=20), which contradicts the instruction that 'Bill' should be at y=10 and 'Jim' at y=20. Additionally, the colors of the bars are swapped: the first bar (Bill) is blue as requested, but the second bar (Jim) has segments colored orange, green, and red, which matches the instruction. However, the y-position of the second bar is at 20, which is correct for 'Jim', but the first bar is at y=10, which is correct for 'Bill'. The issue is that the y-axis labels are reversed. The first bar (blue) is at y=10, which should be 'Bill', but the label 'Bill' is at the bottom, and 'Jim' is at the top. The y-axis labels are ['Bill', 'Jim'], but the bar at y=10 is labeled 'Jim' and the bar at y=20 is labeled 'Bill', which is incorrect. The y-axis labels are reversed."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The y-axis tick labels are incorrectly assigned: 'Bill' is at the top (y=10) and 'Jim' is at the bottom (y=20), which is the reverse of the requested order. Additionally, the colors of the bars are incorrect: the first bar (Bill) is blue as requested, but the second bar (Jim) has segments colored orange, green, and red, which is correct, but the y-position of the second bar is at 20, which should correspond to 'Jim', but the label 'Jim' is at the bottom, indicating a mismatch in the y-axis labeling."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The annotation text 'race interrupted' is partially clipped by the right edge of the image, making it difficult to read. Additionally, the annotation arrow extends beyond the visible area, and the text is cut off, which violates the requirement for readable text."
+        }
+      ]
+    },
+    {
+      "run_id": "141",
+      "errors": []
+    },
+    {
+      "run_id": "142",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization shows a vertical stacked bar chart instead of the required horizontal stacked bar chart. The data values are correct, but the orientation is wrong, which violates the requirement for horizontal bars."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart is a vertical stacked bar chart, but the task requires a horizontal stacked bar chart. The bars are oriented vertically instead of horizontally, which violates the chart type requirement."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The figure is a vertical stacked bar chart, not a horizontal stacked bar chart as requested. The title is correct, but the chart orientation is wrong. The legend is present but the colors are not from the RdYlGn colormap as specified. The figure size is 9x5 inches, but the layout is not properly adjusted, causing the legend to be partially cut off. The data labels are visible but the text is small and may be difficult to read. The overall layout is cramped, with bars and labels overlapping, making it hard to read the data clearly."
+        }
+      ]
+    },
+    {
+      "run_id": "143",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization does not correctly transform the data as requested. The first subplot shows exponential decay with a decay factor of 7.0, but the y-axis values are not properly scaled to match the expected exponential decay function. The second subplot shows cosine of data multiplied by 3π, but the x-axis is not on a logarithmic scale as required. The third subplot shows 25 times exponential decay with decay factor 15.0, but the x-axis is not on a base 3 logarithmic scale. The fourth subplot shows cubed data with error bars, but the error bars are not correctly calculated as 15% of x and 7.0 plus 80% of y, and the y-axis lower limit is not set to 0.15. Additionally, the data range for the first three subplots is not evenly spaced from 0.02 to 25.0 with a step of 0.02."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The figure does not follow the requested chart design. The first subplot title is 'semilogy' instead of 'Exponential Decay (decay factor = 7.0)'. The second subplot title is 'semilogx' instead of '3π * cos(data)'. The third subplot title is 'loglog base 3 on x' instead of '25 * exp(-15 * data)'. The fourth subplot title is 'Errorbars go negative' instead of '15^x with Error Bars'. The y-axis of the first subplot is not on a logarithmic scale as requested. The x-axis of the second subplot is not on a logarithmic scale as requested. The third subplot does not have a base 3 logarithmic scale on the x-axis. The fourth subplot does not have error bars with the specified x and y error calculations. The y-axis of the fourth subplot does not have a lower limit of 0.15 as requested. The figure size is not 9 by 7 inches as requested."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The figure has overlapping text in the fourth subplot where the title 'Errorbars go negative' is partially cut off by the edge of the image. Additionally, the y-axis label '1e7' in the fourth subplot is partially clipped at the top edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "145",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "146",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The main problem is incorrectly labeled as 'Decreased Sales Performance' at the head of the diagram, but the title of the diagram is 'Fishbone Diagram: Potential Causes of Decreased Sales Performance'. The main problem should be labeled as 'Problem' as per the instruction, but it is labeled as 'Decreased Sales Performance'."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The main problem text is incorrectly labeled as 'Decreased Sales Performance' at the center of the diagram instead of 'Problem' at the head of the diagram. Additionally, the title of the chart is 'Fishbone Diagram: Potential Causes of Decreased Sales Performance', which is not the requested title. The diagram also lacks the required layout and arrangement of categories and causes as specified in the task."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The title 'Fishbone Diagram: Potential Causes of Decreased Sales Performance' is clipped at the top edge of the image, making it partially unreadable. Additionally, the main problem text 'Decreased Sales Performance' is partially cut off on the right side, and some of the category and cause labels are overlapping or too close to the edges, reducing readability."
+        }
+      ]
+    },
+    {
+      "run_id": "150",
+      "errors": []
+    },
+    {
+      "run_id": "153",
+      "errors": []
+    },
+    {
+      "run_id": "155",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The first plot uses a Mobius strip formula instead of the requested function mapping p, q pairs to x, y, z triples. The parameter ranges are also incorrect (p from 0 to 4π, q from -1 to 1), but the formula used does not match the requested transformation. The second plot uses a different function (cos(radii) * cos(3 * angles)) instead of the requested mapping of radius, angle pairs to x, y, z points. The masking condition is also not correctly applied as the formula used does not match the requested transformation."
+        }
+      ]
+    },
+    {
+      "run_id": "156",
+      "errors": []
+    },
+    {
+      "run_id": "161",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization shows the exp(t) series on the right y-axis (blue line) and the sin(2*pi*t) series on the left y-axis (red line), which is the opposite of the requirement. The exp(t) series should be on the left y-axis with a logarithmic scale, and the sin(2*pi*t) series should be on the right y-axis. The data is also incorrectly colored and labeled."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The figure does not meet the requirements. The left y-axis is not logarithmic as requested; it appears to be linear. The exp(t) series is plotted as a red line, but the sin(2*pi*t) series is plotted as a blue line, not a dotted line as specified. The legend shows 'exp(t)' and 'sin(2πt)' but the line styles do not match the requirements (solid for exp(t) and solid for sin(2πt) instead of dotted for sin(2πt)). The x-axis label is 'time (s)' instead of 't' as requested. The title is 'Two series with different left and right scales' instead of 'Dual Y-Axis Plot: exp(t) and sin(2*pi*t)' as requested. The secondary y-axis is missing, and the two series do not share the x-axis as required."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The y-axis labels for the sine function are partially clipped at the bottom of the image, making them difficult to read. The label 'sin' is cut off, and the tick labels are truncated, which violates the requirement for readable text. Additionally, the legend is partially cut off at the top of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "163",
+      "errors": []
+    },
+    {
+      "run_id": "164",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization does not correctly transform the data as requested. The first broken bar (Bill) should have segments at 98 (width 28) and 128 (width 47), but the plot shows segments at approximately 100-125 and 125-175. The second broken bar (Jim) should have segments at 8 (width 46), 99 (width 22), and 132 (width 15), but the plot shows segments at approximately 0-50, 100-120, and 130-150. The positions and widths of the segments are incorrect, and the facecolors are not properly assigned (Bill's bar is blue, Jim's bar is orange, green, and red, but the order is incorrect)."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart type is incorrect. The task requested a broken horizontal bar plot, but the image shows a standard grouped bar chart. The bars are not broken with gaps as specified, and the data representation is fundamentally different from a broken bar plot. The y-axis labels are also reversed (Bill at the bottom, Jim at the top) compared to the requested order."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The annotation text 'race interrupted' is partially clipped by the right edge of the image, making it difficult to read. The text is cut off at the end, which violates the requirement for readable text."
+        }
+      ]
+    },
+    {
+      "run_id": "165",
+      "errors": []
+    },
+    {
+      "run_id": "166",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization is a Cartesian bar chart, not a polar bar plot as requested. The data is grouped into four categories (A, B, C, D) with the correct number of items (10, 20, 12, 8), but the plot type is incorrect. The plot uses a rectangular coordinate system instead of a polar projection, violating the requirement to use a polar coordinate system. The bars are arranged in a linear fashion rather than in a circular pattern, and there is no radial orientation of labels or separation between groups in a circular layout."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The image is a vertical bar chart, not a polar bar plot as requested. The chart uses a Cartesian coordinate system with x and y axes, whereas the task required a polar projection. The data is grouped into four vertical bars, not arranged in a circular polar layout. The title and legend are present, but the fundamental chart type is incorrect."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The figure is a Cartesian bar chart, not a polar bar plot as requested. The data is not arranged in a circular format, and the plot does not use a polar coordinate system. The title, labels, and legend are all present, but the fundamental structure of the visualization is incorrect. The plot shows 50 items in four groups with different colors, but it is not a polar plot. The requirement for a polar projection is not met."
+        }
+      ]
+    },
+    {
+      "run_id": "167",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows the wrong reservoir data: the blue line is labeled 'Oroville' but corresponds to the Shasta data, and the orange line is labeled 'Shasta' but corresponds to the Oroville data. The peak annotation also incorrectly references the wrong reservoir, showing 'Peak: 3452.7 TAF (week 17)' for the Shasta line, which is actually the Oroville peak. The data for the two reservoirs has been swapped in the plot."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart uses the wrong line colors: Oroville is shown in blue and Shasta in orange, but the legend labels them as 'Oroville' and 'Shasta' respectively, which is inconsistent with the actual color assignment. Additionally, the peak point is marked with a red dot, but the legend does not include a label for 'Peak', and the annotation text is not properly formatted as requested."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The annotation text 'Peak: 3452.7 TAF (week 17)' is partially clipped by the top edge of the image, making it difficult to read. The text is cut off at the top, which violates the requirement for readable text."
+        }
+      ]
+    },
+    {
+      "run_id": "168",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "169",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The x-axis of the scatter plot is incorrectly labeled as 'x' but the values range from -4 to 4, which is correct, but the marginal histograms show incorrect scaling. The x-axis marginal histogram shows values up to 100, which is inconsistent with the data range of -4 to 4. The y-axis marginal histogram shows values up to 100, which is also incorrect. The data points are plotted correctly, but the marginal distributions are not properly scaled to match the data range."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The figure does not meet the required specifications. The x-axis limits are not set to -4..4 as requested, and the x-axis label is incorrect (showing 'x' but with a different scale). The y-axis label is also incorrect, showing 'y' but with a different scale. The figure size is not 7x7 inches, and the suptitle is missing. The marginal distributions are not properly aligned with the main scatter plot, and the histograms are not correctly positioned at the sides of the plot."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The figure has several readability issues: the x-axis label 'x' is partially clipped at the bottom, the y-axis label 'y' is partially clipped on the left, the marginal histograms are misaligned with the main plot, and the x-axis of the marginal histogram on the right is incorrectly labeled with numbers like '0', '503', '1004' instead of the correct range. The main scatter plot is also squeezed and not properly aligned with the marginal distributions."
+        }
+      ]
+    },
+    {
+      "run_id": "170",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The second row of plots uses gamma-distributed data with size 80x70, but the visualized data appears to be 80x160, which is inconsistent with the requested size. The x-axis in the bottom-left plot extends to 20.0, and the y-axis extends to 160, suggesting a data size of 80x160 instead of 80x70. This indicates a mismatch in the data dimensions used for visualization."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The second row of the figure does not match the requested specifications. The horizontal event plot for gamma-distributed data should have a line offset of 2 and line length of 0.7, but the plot shows a different offset and length. Similarly, the vertical event plot for gamma-distributed data should use 'darkorange' color, line offset of 2, and line length of 0.7, but the plot shows different styling. Additionally, the data size for the gamma-distributed data is 80x70, but the plots show different dimensions."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The second row of plots has overlapping text and is unreadable. The horizontal event plot (Gamma) in the bottom-left has extremely dense, overlapping text labels that make it impossible to read. The vertical event plot (Gamma) in the bottom-right has a similar issue with overlapping text and unreadable labels. The font size is too small for the amount of data, causing severe clutter and making the plots difficult to interpret."
+        }
+      ]
+    },
+    {
+      "run_id": "171",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "173",
+      "errors": [
+        {
+          "family": "hard_to_read",
+          "evidence": "The integral formula text is partially clipped at the top and bottom edges of the image, making it difficult to read. The text box containing the formula extends beyond the visible area of the plot, indicating that the text is not fully contained within the figure boundaries."
+        }
+      ]
+    },
+    {
+      "run_id": "175",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart title is incorrect. The requested title is '3D bar layers', but the actual title shown is '3D bar layers' with an extra '3D bar layers' text at the top. Additionally, the y-axis label is 'Y' instead of the required 'Y axis'. The colors used are not the specified 'purple', 'orange', 'grey', and 'pink' but rather different colors like purple, yellow, grey, and pink. The last bar of each set is not colored black as required."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The y-axis label 'Y' is partially clipped at the top of the image, and the legend is overlapping with the bars, making it difficult to read. The title '3D bar layers' is also partially cut off at the top. The bars are very dense and close together, which could make it difficult to distinguish individual bars, especially in the middle of the plot. The last bar of each set is colored black, but due to the density of the bars, it's hard to clearly identify which bar is the last one in each group."
+        }
+      ]
+    },
+    {
+      "run_id": "177",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization does not match the requested requirements. The left panel shows a bar chart instead of a pie chart, and the right panel shows a stacked bar chart with incorrect data (the percentages are reversed and the order is wrong). The pie chart slice for apples is not separated, and there are no connecting lines between the panels. The values in the stacked bar chart are also incorrect (25% under 18, 40% 18-30, 20% 30-50, 15% over 50) but are displayed in reverse order."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The requested plot should have a side-by-side pie chart and stacked bar chart. However, the image shows a bar chart for fruit distribution and a stacked bar chart for age groups, which does not match the required chart types. The pie chart is missing, and the bar chart for fruit distribution is not a stacked bar chart as required."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The figure contains a stacked bar chart and a pie chart, but the visual representation does not match the requested specifications. The pie chart is missing, and the stacked bar chart is incorrectly labeled as 'Age of apple lovers' with a legend that is not properly aligned. The connection lines between the pie chart slice and the stacked bar chart are absent. The text labels are not clearly readable due to overlapping and poor layout, and the overall figure does not meet the requirements for clarity and aesthetics."
+        }
+      ]
+    },
+    {
+      "run_id": "180",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart type is incorrect. The task requested a filled 3D tricontour plot, but the generated image shows a 3D surface plot with a color gradient, not a filled contour plot. The visual representation does not match the requested chart type, as it lacks the distinct contour lines and filled regions characteristic of a tricontour plot."
+        }
+      ]
+    },
+    {
+      "run_id": "181",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "183",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization includes data for Africa, which is not requested. The task requires only Asia and Europe to be included. Additionally, the color scale is not centered on the weighted average lifespan, and the legend for continents is not properly displayed in the inner ring as requested."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart includes data for Africa, which violates the requirement to only include countries from Asia and Europe. The chart also shows a title that is not requested ('Population sunburst coloured by life expectancy (2007)') and includes a colorbar that is not properly labeled as 'Life expectancy (years)' with the correct scale."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The figure includes countries from Africa, which violates the requirement to only include Asia and Europe. The title also incorrectly states 'Population sunburst coloured by life expectancy (2007)' without specifying the continents. The colorbar is labeled correctly, but the chart contains data from continents other than Asia and Europe, making it incorrect."
+        }
+      ]
+    },
+    {
+      "run_id": "191",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization does not correctly represent the data hierarchy or values as requested. The chart appears to be a treemap or a similar layout rather than a sunburst chart, and the color coding does not match the specified region colors (e.g., Africa is shown in green, but the legend indicates it should be green, which is consistent, but the chart does not show a clear hierarchical structure based on 'Major Area', 'Regions', and 'Country'). Additionally, the 'Overall score' values are not visibly encoded in the segment sizes or colors, and the chart does not have a hollow center as required."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart is a treemap, not a sunburst chart as requested. The hierarchy is not structured as 'Major Area', 'Regions', 'Country' with 'Overall score' values. The center is not hollow, and the legend does not match the requested color coding for regions. The title and subtitle are present but the overall design does not meet the requirements."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The figure is a treemap, not a sunburst chart as requested. The title and subtitle are present but the chart does not follow the hierarchical structure of 'Major Area', 'Regions', 'Country' with 'Overall score' values. The legend is present but the color coding does not match the requested regions. The text labels are small and may be difficult to read, and the layout is not a sunburst chart."
+        }
+      ]
+    },
+    {
+      "run_id": "195",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The 3D scatter plot uses the wrong variables for the axes. The instruction specifies that the 3D plot should use '0-60 mph(sec)', 'Gas Mileage(mpg)', and 'Power(kW)' as coordinates. However, the plot shows '0-60 mph(sec)' on the x-axis, 'Gas Mileage(mpg)' on the y-axis, and 'Power(kW)' on the z-axis, which is correct. The issue is with the projections: the ZX plane projection incorrectly shows 'Power (kW)' on the x-axis and '0-60 mph (sec)' on the y-axis, but the z-axis is labeled 'Engine Displacement (cc)', which is not a valid axis for a ZX projection. The YZ plane projection also has incorrect labeling, with 'Gas Mileage (mpg)' on the x-axis and 'Power (kW)' on the y-axis, but the z-axis is labeled 'Engine Displacement (cc)', which is not a valid axis for a YZ projection. The color bar is correctly labeled 'Engine Displacement (cc)', but the color mapping is incorrect as it should be from purple (small engines) to yellow (large engines), but the color bar shows a gradient from purple to yellow, which is correct. The point sizes are correctly scaled with engine displacement, but the projections are incorrectly labeled and do not match the requested specifications."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The figure does not follow the requested chart design. The main 3D scatter plot is missing, and the projections are incorrectly arranged. The XY plane projection is labeled incorrectly as 'XY Plane Projection' but is actually a 2D scatter plot. The ZX and YZ plane projections are not properly positioned below and to the sides of the 3D points. The color bar is missing, and the axis labels are incorrect. The overall layout is not as requested, with the projections not properly aligned and the main 3D plot missing."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The figure has overlapping text and elements covering content. The title '3D Car Performance Analysis' is partially cut off at the top. The 'ZX Plane Projection' title is also partially cut off. The color bar is very wide and covers a significant portion of the right side of the image, potentially obscuring data. The labels on the 3D plot are small and difficult to read, and the projections have overlapping data points that make it hard to distinguish individual points."
+        }
+      ]
+    },
+    {
+      "run_id": "196",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization shows Group 1 with a mean around 100 and Group 2 with a mean around 130, but the data points for Group 1 are plotted at x=0 and Group 2 at x=1, which is correct. However, the colors are incorrect: Group 1 is shown in blue (correct) but Group 2 is shown in orange (correct). The data generation is correct with normal distributions (mean 100, std 30 for Group 1; mean 130, std 30 for Group 2). The beeswarm plot and boxplots are correctly overlaid. The title and y-axis label are present. The legend indicates the groups. The figure is saved as figure.png. The only issue is that the plot shows the data correctly, but the colors are correct. The data is correctly transformed and plotted. The visualization correctly represents the data as requested. The only potential issue is that the boxplot for Group 1 is not clearly visible due to the color, but the data is correctly plotted. The visualization correctly transforms the data as requested."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart title is incorrect. The requested title is 'Beeswarm plot and Boxplots, made with matplotlib', but the actual title is 'Beeswarm plot and Boxplots, made with matplotliblib'. The extra 'lib' in the title is a clear deviation from the requested text."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The title 'Beeswarm plot and Boxplots, made with matplotlib' is partially clipped at the top of the image. The y-axis label 'Value' is also partially cut off at the bottom. The legend is positioned in the top right corner and overlaps with the data points of Group 2, making it difficult to read the labels clearly. The boxplot for Group 1 is drawn in a light blue color with low contrast against the background, making it hard to distinguish from the surrounding area. The beeswarm points for Group 1 are blue and the boxplot is light blue, which may cause confusion. The overall layout appears squeezed, with the data points and boxplots occupying a narrow space, potentially making it difficult to read individual data points."
+        }
+      ]
+    },
+    {
+      "run_id": "199",
+      "errors": []
+    },
+    {
+      "run_id": "200",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization shows Group 1 data centered around 100 and Group 2 data centered around 130, but the y-axis values are incorrect. The data points for Group 1 are plotted around 50-150, and Group 2 around 60-200, which is inconsistent with the requested normal distributions with means of 100 and 130 and standard deviation of 30. The y-axis scale is also incorrect, as it starts at 25 and goes to 225, but the data points are not properly scaled to reflect the actual values."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The y-axis does not start at 0 as required. The y-axis range shown is from 25 to 225, but the requirement specifies that the y-axis must start at 0. The chart also shows the y-axis starting at 25, which violates this requirement."
+        }
+      ]
+    },
+    {
+      "run_id": "202",
+      "errors": []
+    },
+    {
+      "run_id": "203",
+      "errors": []
+    },
+    {
+      "run_id": "204",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows the correct data points and error bars, but the x-axis labels are incorrect. The conditions are listed as 'Baseline', 'Cat-A', 'Cat-B', 'Cat-C', 'Cat-D', but the plot shows them in the order 'Baseline', 'Cat-A', 'Cat-B', 'Cat-C', 'Cat-D'. However, the y-axis values are not correctly aligned with the data. The mean yield for Cat-B is 61.8%, but the plot shows it as approximately 60%. The mean yield for Cat-A is 55.4%, but the plot shows it as approximately 55%. The mean yield for Cat-C is 58.2%, but the plot shows it as approximately 50%. The mean yield for Cat-D is 49.7%, but the plot shows it as approximately 58%. The mean yield for Baseline is 42.1%, but the plot shows it as approximately 42%. The error bars are also not correctly aligned with the data points. The SEM for Cat-B is 1.9, but the error bar is shown as approximately 2. The SEM for Cat-A is 3.1, but the error bar is shown as approximately 3. The SEM for Cat-C is 2.8, but the error bar is shown as approximately 2. The SEM for Cat-D is 4.2, but the error bar is shown as approximately 4. The SEM for Baseline is 2.3, but the error bar is shown as approximately 2. The plot also does not start at 0 on the y-axis, which is a requirement."
+        }
+      ]
+    },
+    {
+      "run_id": "205",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization shows the flow values as 100, 20, 20, 20, 20, and 10, but the diagram incorrectly represents the flow from 'Phase 1' to 'Hurray!' as 100 to 20, which is not consistent with the requested flow values. The final phase 'Hurray!' is shown with a value of 20 instead of 10, and the flow from 'Phase 1' to 'Phase 2' is incorrectly depicted as 100, which should be 20. The sequence of phases is also reversed, with 'Phase 1' at the bottom and 'Hurray!' at the top, which contradicts the requested order."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart type is incorrect; a Sankey diagram was requested, but the output is a flow diagram with rectangular blocks and arrows, not a true Sankey diagram. The flow values are also incorrect (100, 20, 20, 20, 20, 10), but the diagram shows the flow from Phase 1 to Hurray! as 100, which is not a sequential flow. The final phase 'Hurray!' is highlighted in blue, but the diagram does not accurately represent the transition magnitudes between phases as specified."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The flow diagram is incorrectly structured. The flow from 'Phase 1' (100) is shown going to 'Phase 2' (20), but the subsequent flows from 'Phase 2' to 'Phase 5' are shown as separate, independent flows, not connected to the main flow. The final 'Hurray!' phase is not connected to any preceding phase, and the flow values are not correctly represented. The diagram is also not a Sankey diagram, as it uses rectangular blocks and arrows instead of the typical flow-based visualization. The text 'Hurray!' is partially cut off at the top left."
+        }
+      ]
+    },
+    {
+      "run_id": "206",
+      "errors": []
+    },
+    {
+      "run_id": "208",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "209",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization title is incorrect; it reads 'Beeswarm plot and Boxplots, made with matplotliblib' instead of 'Beeswarm plot and Boxplots, made with matplotlib'. Additionally, the legend colors are mismatched: Group 1 is shown in blue, but the legend indicates Group 1 as blue and Group 2 as orange, which is correct, but the plot shows Group 2 in orange, which is correct. However, the title error is a clear deviation from the requested specification."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart title is incorrect; it reads 'Beeswarm plot and Boxplots, made with matplotliblib' instead of 'Beeswarm plot and Boxplots, made with matplotlib'. Additionally, the legend uses blue and orange circles, but the colors are not correctly assigned to the groups (Group 1 is blue, Group 2 is orange, but the legend shows Group 1 as blue and Group 2 as orange, which is correct, but the plot uses blue for Group 1 and orange for Group 2, so this is correct). However, the title error is a clear failure."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The title is partially clipped at the top of the image, cutting off the last part of the text. The y-axis label 'Values' is also partially cut off at the top. The legend is positioned in the top right corner and overlaps with the data points of Group 2, making it difficult to read the data points behind it. The boxplot for Group 1 is drawn in blue, and the beeswarm plot for Group 1 is also blue, but the boxplot for Group 2 is drawn in a dark color that overlaps with the beeswarm plot, making it hard to distinguish the data points. The overall layout is squeezed, with the data points and boxplots appearing very close to the edges of the plot area."
+        }
+      ]
+    },
+    {
+      "run_id": "210",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The plot title is incorrectly spelled as 'Rossler Attractor' instead of 'Rossler Attractor' (missing 'o' in 'Rossler'). The axis labels are correct ('u', 'v', 'w'), and the plot is 3D with a line width of 0.5. However, the title is misspelled, which constitutes a failure in the required text element."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The title 'Rossler Attractor' is partially clipped at the top edge of the image, and the axis labels 'u', 'v', and 'w' are partially cut off at the bottom and sides, making them difficult to read."
+        }
+      ]
+    },
+    {
+      "run_id": "212",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization shows only two species (setosa and versicolor) with ellipsoids, but the data contains three species (setosa, versicolor, and virginica). The virginica species is missing from the plot, which constitutes a missing data failure."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart title is incorrect; it should be '3D Scatter Plot of Iris Flowers with 95% Confidence Ellipses' but is shown as 'Iris species with 95% confidence ellipsoids'. The x-axis label is also incorrect; it should be 'Petal Length' but is shown as 'Petal Length' with a typo in the label text. The z-axis label is incorrect; it should be 'Sepal Length' but is shown as 'Sepal Length' with a typo in the label text. The legend is missing, and the confidence ellipses are not properly aligned with the principal axes of variation in the dataset."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The title 'Iris species with 95% confidence ellipsoids' is partially clipped at the top of the image. The x-axis label 'Petal Length' is partially cut off at the bottom. The legend is partially obscured by the plot area, making it difficult to read. The z-axis label 'Sepal Length' is partially cut off on the right side. The overall layout appears squeezed, with the plot elements crowding the edges of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "213",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization shows incorrect quartile values (Q1=642, Median=714, Q3=777) and min/max values (Min=498, Max=1598) that do not match the actual data. The data shows a minimum of 1565, maximum of 5019, Q1 of 2353, median of 2552, and Q3 of 2923. The values are significantly off, indicating incorrect data processing or calculation."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart type is incorrect. The task requested a composite graph with an axis-free box plot above and a histogram below, but the image shows a standard box plot with whiskers and outliers, and a histogram below. The box plot is not axis-free as required, and the quartile lines are not continuous red dashed lines across both sections. The x-axis label is missing from the histogram, and the y-axis of the histogram does not start at 0. The figure size is not 9 by 7 inches, and the title is incorrect."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The figure has overlapping text and clipped content. The quartile lines (red dashed lines) extend beyond the plot area, and the text labels for Q1, Median, and Q3 are partially cut off at the top of the box plot. The x-axis label 'Women's earnings (millions of dollars)' is partially cut off at the bottom right. The title 'Distribution of women's earnings' is also partially cut off at the top. The annotations for Min and Max are positioned at the edges of the plot, making them difficult to read."
+        }
+      ]
+    },
+    {
+      "run_id": "214",
+      "errors": []
+    },
+    {
+      "run_id": "216",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The bar colors are incorrect: Agree is blue, Neutral is orange, and Disagree is green, but the legend labels do not match the colors used in the chart."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart uses the wrong colors for the response categories: Agree is blue, Neutral is orange, and Disagree is green, which does not match the requested color scheme of Agree (#1f77b4), Neutral (#ff7f0e), and Disagree (#2ca02c)."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The legend is missing, and the colors used for the bars (Agree, Neutral, Disagree) are not consistent with the required labels, making the data indistinguishable."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+system,cohort,latency_ms,error_rate_pct,throughput_mbps,energy_wh
+Reference A,Reference,120,4.0,40,8.0
+Reference B,Reference,100,5.0,50,7.0
+Reference C,Reference,80,6.0,60,6.0
+Reference D,Reference,60,7.0,70,5.0
+Candidate A,Candidate,90,2.0,80,4.0
+Candidate B,Candidate,70,3.0,90,4.5
+Candidate C,Candidate,50,1.0,100,3.0
+Candidate D,Candidate,110,2.5,85,3.5

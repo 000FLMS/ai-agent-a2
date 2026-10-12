@@ -1,0 +1,70 @@
+schema_version = "1.4"
+
+# Files pulled OUT of the container, so you can look at what the agent produced
+# next to the verifier's verdict.  Paths are container paths.
+# Outputs pulled out of the container for review alongside the verdict.
+#
+# Collected at the END OF THE AGENT PHASE, before the verifier runs -- so do not
+# list verifier outputs like "/logs/verifier/pytest.log" here.  They do not
+# exist yet and are recorded as "status": "failed" in artifacts/manifest.json.
+# harbor saves the verifier logs for you at
+# jobs/<job-name>/<trial>/verifier/pytest.log regardless.
+artifacts = [
+  "/app/figure.png",
+  "/app/plot.py",
+  "/app/plotted_values.json",
+]
+
+[task]
+# Task names use the "org/name" form.
+name = "cmu-11768/zone-temperature-merge"
+version = "1.0.0"
+# One-line summary of the task.
+description = "Join sensor metadata and plot valid daily median temperatures by zone."
+keywords = ["visualization", "matplotlib", "csv", "join", "median", "missing-data"]
+
+# TRAP 1.  Authors are TABLES, not strings.  `authors = ["your name"]` parses as
+# valid TOML but fails pydantic validation, and harbor reports that as
+# "Either datasets or tasks must be provided" -- i.e. "no task found", not
+# "bad task.toml".  Run preflight.py if you ever see that message.
+[[task.authors]]
+name = "sihanhe"
+
+[metadata]
+# Free-form; harbor does not validate this table.
+task_class = "relational-data-transformations"
+chart_family = "multi_line"
+source = "tasks/zone-temperature-merge/task.json"
+input_source = "tasks/zone-temperature-merge/inputs/sites.csv and readings.csv"
+difficulty = "medium"
+
+[verifier]
+timeout_sec = 600.0
+# TRAP 2.  There is no `collect = [...]` list of files here.  [[verifier.collect]]
+# blocks are SHELL COMMANDS run after the agent phase (each block needs a
+# `command` key).  To pull files out, use the root-level `artifacts` list above.
+# Passing filenames to `collect` fails validation with the same misleading
+# "Either datasets or tasks must be provided".
+
+[verifier.env]
+
+[agent]
+timeout_sec = 900.0
+
+[environment]
+# Harbor 0.23's Docker egress-control backend needs CONFIG_NFT_FIB_INET, which
+# is absent from this Docker Desktop kernel. Keep Harbor's policy public so it
+# skips that backend; environment/docker-compose.yaml still attaches `main` to
+# Docker's native `none` network, so agent and verifier execution stay offline.
+# This fallback is for the single-service local Docker tasks in this assignment.
+network_mode = "public"
+build_timeout_sec = 900.0
+os = "linux"
+cpus = 1
+memory_mb = 2048
+mcp_servers = []
+
+[environment.env]
+MPLBACKEND = "Agg"
+
+[solution.env]

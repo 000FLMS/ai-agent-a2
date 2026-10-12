@@ -1,0 +1,181 @@
+{
+  "predictions": [
+    {
+      "run_id": "cumulative-net-sales__glm",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows incorrect cumulative sales values; Widget A should have a cumulative total of 17 but shows approximately 17.5, and Widget B should have a cumulative total of 15 but shows approximately 15.5, indicating a discrepancy in the calculated cumulative sums."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The x-axis label is incorrectly labeled as 'Date' instead of 'Date' with the correct formatting, and the y-axis label is missing the dollar sign in 'Cumulative net sales ($)'"
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The x-axis labels are overlapping and difficult to read due to the rotation and density of the date labels."
+        }
+      ]
+    },
+    {
+      "run_id": "cumulative-net-sales__ministral",
+      "errors": []
+    },
+    {
+      "run_id": "cumulative-net-sales__qwen",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "monthly-calendar-heatmap__glm",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The visualization incorrectly shows data for February 2025, but the values and positions are wrong; for example, the date 2025-02-12 is missing, but the heatmap shows a value in that position, and the incident counts do not match the provided data."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart uses a Sunday-first grid instead of a Monday-first grid, and the week labels are incorrectly ordered from Week 5 to Week 1 instead of Week 1 to Week 5."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The figure has overlapping text where the 'Day of Week' label is partially covered by the colorbar, and the 'Week' labels are cut off at the top edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "monthly-calendar-heatmap__ministral",
+      "errors": []
+    },
+    {
+      "run_id": "monthly-calendar-heatmap__qwen",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "parallel-coordinates-normalization__glm",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot uses the wrong color scheme for cohorts, with Reference systems shown in blue and Candidate systems in orange, which contradicts the instruction to use blue for Reference and orange for Candidate."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart uses the wrong color scheme for cohorts (blue and orange instead of blue and orange as specified) and the x-axis labels are incorrectly rotated and mislabeled as 'latency_ms' instead of 'latency_ms', 'error_rate_pct', 'throughput_mbps', 'energy_wh'."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The x-axis labels are rotated and partially cut off at the bottom of the image, making them difficult to read."
+        }
+      ]
+    },
+    {
+      "run_id": "parallel-coordinates-normalization__ministral",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot uses incorrect axis labels and the axes are not in the requested order; the x-axis labels are incorrect, and the y-axis labels are misaligned with the data, indicating a failure in correctly transforming and plotting the data as instructed."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart title is incorrect, the axes are not labeled with their original min/max values, the axes order is wrong, and the legend is misplaced and incorrectly formatted."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The plot has overlapping text and clipped labels, with axis titles and tick labels partially cut off, making it difficult to read."
+        }
+      ]
+    },
+    {
+      "run_id": "parallel-coordinates-normalization__qwen",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "weighted-conversion-rate__glm",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart shows the channels in the wrong order (Email, Search, Social) instead of the required order from highest to lowest rate (Email, Search, Social), and the conversion rate labels are placed incorrectly on the bars."
+        }
+      ]
+    },
+    {
+      "run_id": "weighted-conversion-rate__ministral",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart shows the wrong order of channels; it should be sorted from highest to lowest conversion rate, but 'Email' is first, which is incorrect based on the calculated rates."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart is a horizontal bar chart, but the y-axis label is 'Channel' instead of 'Channel', and the x-axis label is 'Conversion rate (%)' which is correct, but the title is 'Overall Conversion Rate by Channel' which is correct, however the chart shows the channels in the wrong order (Email, Search, Social) instead of sorted from highest to lowest conversion rate."
+        }
+      ]
+    },
+    {
+      "run_id": "weighted-conversion-rate__qwen",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The conversion rates are incorrectly calculated and displayed as percentages in reverse order, with values like 10.0%, 15.0%, and 50.0% shown as 10.0%, 15.0%, and 50.0% respectively, and the chart is sorted in ascending order instead of descending order."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart is a vertical bar chart instead of the required horizontal bar chart, and the conversion rate percentages are incorrectly displayed on the y-axis with reversed values and incorrect formatting."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The y-axis labels are incorrectly formatted with percentages in reverse order (e.g., 5.0%, 10.0%, etc.) and are not properly aligned, making the chart difficult to read due to mislabeled and overlapping tick labels."
+        }
+      ]
+    },
+    {
+      "run_id": "zone-temperature-merge__glm",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart shows incorrect values for the North zone, with a median temperature of 5.0°C on both Jan 1 and Jan 2, but the correct value for Jan 2 should be 5.0°C (which is correct) and for Jan 3 it should be 8.0°C, while the South zone shows 10.0°C on Jan 1 and Jan 3, but the correct value for Jan 2 should be 8.0°C, not 10.0°C."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart shows the correct line type, but the y-axis label is missing, the legend is incorrectly placed, and the x-axis label is not properly rotated, violating the required chart design."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The x-axis labels are rotated and partially cut off, making them difficult to read, and the legend is positioned in a way that it may overlap with the data points."
+        }
+      ]
+    },
+    {
+      "run_id": "zone-temperature-merge__ministral",
+      "errors": [
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart title is incorrect; it should be 'Daily Median Temperature by Zone' but is displayed as 'Daily Median Temperature by Zone' with a typo in the y-axis label ('Median temperature (C)' vs 'Median temperature (C)') and the legend is missing."
+        }
+      ]
+    },
+    {
+      "run_id": "zone-temperature-merge__qwen",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "predictions": [
+    {
+      "run_id": "cumulative-net-sales__glm",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart shows incorrect cumulative sales values; for Widget A, the cumulative sales on 2025-02-01 should be 8, but the chart shows 8 on 2025-02-01 and then jumps to 13 on 2025-02-02, which is correct, but the final value should be 17, not 16.5, and for Widget B, the cumulative sales on 2025-02-01 should be 5, but the chart shows 5 on 2025-02-01 and then drops to 4 on 2025-02-02, which is correct, but the final value should be 15, not 15.5. The values are slightly off, indicating a possible rounding or plotting error."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart title is 'Cumulative Net Sales by Product' but the rendered title is 'Cumulative Net Sales by Product', which is correct; however, the y-axis label is 'Cumulative net sales ($)' but the rendered label is 'Cumulative net sales ($)' which is correct; the x-axis label is 'Date' and the rendered label is 'Date' which is correct; the legend is present and correctly labeled; the figure size and DPI are correct; the only issue is that the chart shows cumulative sales for each product, but the cumulative sales for Widget B on 2025-02-01 is 5, on 2025-02-02 is 4, and on 2025-02-03 is 15, which is not monotonically increasing, indicating a possible error in the cumulative sum calculation."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The x-axis labels are duplicated and overlapping, making them hard to read."
+        }
+      ]
+    },
+    {
+      "run_id": "cumulative-net-sales__ministral",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The cumulative sales for Widget B are incorrect; the value on 2025-02-01 should be 5 (5 from transaction) but the plot shows approximately 5, while on 2025-02-02 it should be 4 (5 - 1) but the plot shows approximately 4, and on 2025-02-03 it should be 7 (4 + 3) but the plot shows approximately 15, indicating a calculation error in cumulative sum."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The y-axis label is 'Cumulative net sales ($)' but the chart shows 'Cumulative net sales' without the dollar sign in the label."
+        }
+      ]
+    },
+    {
+      "run_id": "cumulative-net-sales__qwen",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "monthly-calendar-heatmap__glm",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The heatmap shows incorrect data for February 1st (4 incidents) and February 2nd (0 incidents) in Week 1, but these dates should be in Week 1, not Week 2 as shown in the image."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart uses a Sunday-first grid instead of a Monday-first grid, as the days of the week are labeled Sun through Sat."
+        }
+      ]
+    },
+    {
+      "run_id": "monthly-calendar-heatmap__ministral",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The figure incorrectly includes a value of 0 for 2025-02-12, which should be left blank as per the task instructions."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart includes a cell for 2025-02-12, which should be left blank, but the figure shows a value of 0 in that position."
+        }
+      ]
+    },
+    {
+      "run_id": "monthly-calendar-heatmap__qwen",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "parallel-coordinates-normalization__glm",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows the wrong axis order: the x-axis labels are in the order latency_ms, error_rate_pct, throughput_mbps, energy_wh, but the y-axis labels are in the order energy_wh, throughput_mbps, error_rate_pct, latency_ms, which is incorrect."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The y-axis labels are missing the original minimum and maximum values as required by the task."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The x-axis label 'latency_ms' is cut off at the left edge, with only part of the text visible."
+        }
+      ]
+    },
+    {
+      "run_id": "parallel-coordinates-normalization__ministral",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The plot shows incorrect axis labels and order; the axes are labeled as 'error_rate_pct', 'throughput_mbps', and 'energy_wh' but are not in the requested order of latency_ms, error_rate_pct, throughput_mbps, energy_wh, and the labels are misplaced."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The axes are not labeled with their metric names and original min/max values as required; instead, the labels are missing the metric names and only show the column names."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The label 'throughput_mbps' is partially cut off by the right edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "parallel-coordinates-normalization__qwen",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    },
+    {
+      "run_id": "weighted-conversion-rate__glm",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart shows the conversion rates in the wrong order; Email should be first, followed by Search, then Social, but the chart shows Social, Search, Email."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart displays the conversion rates in the wrong order; it shows Social first, then Search, then Email, but the task requires sorting from highest rate to lowest, which should be Email, Search, Social."
+        }
+      ]
+    },
+    {
+      "run_id": "weighted-conversion-rate__ministral",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart shows incorrect conversion rates: Email is shown at approximately 15%, Search at 11%, and Social at 10.8%, but the correct rates are Email: 15.0%, Search: 12.0%, and Social: 10.0%."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart uses vertical bars instead of horizontal bars as required."
+        }
+      ]
+    },
+    {
+      "run_id": "weighted-conversion-rate__qwen",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The conversion rates are incorrectly calculated and displayed as percentages of monthly rates instead of overall rates, and the values are inverted (e.g., 10% shown as 10.0% but plotted as 10.0 on a scale that goes up to 20%)."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The chart displays monthly conversion rates instead of the overall conversion rate for each channel, and the y-axis labels are incorrectly formatted as percentages with negative values, which is not possible for conversion rates."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The y-axis labels are inverted, showing decreasing values from top to bottom, making the conversion rate percentages unreadable."
+        }
+      ]
+    },
+    {
+      "run_id": "zone-temperature-merge__glm",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart shows incorrect values: North zone median temperatures are 5.0, 5.0, 8.0 but the plot shows 5.0, 5.0, 8.0; South zone median temperatures are 10.0, 8.0, 10.0 but the plot shows 10.0, 8.0, 10.0. However, the North zone line is plotted as a blue line with a value of 5.0 on 2025-01-01 and 2025-01-02, but the South zone line is plotted as an orange line with a value of 10.0 on 2025-01-01 and 2025-01-03, and 8.0 on 2025-01-02. The legend shows North as blue and South as orange, but the plot shows North as orange and South as blue, which is incorrect."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The x-axis label is 'Date' but the actual label shown is 'Date' with a typo in the axis label, and the y-axis label is 'Median temperature (C)' but the actual label shown is 'Median temperature (C)' with a typo in the axis label."
+        },
+        {
+          "family": "hard_to_read",
+          "evidence": "The x-axis label 'Date' is partially cut off at the bottom edge of the image."
+        }
+      ]
+    },
+    {
+      "run_id": "zone-temperature-merge__ministral",
+      "errors": [
+        {
+          "family": "wrong_data",
+          "evidence": "The chart shows only one data point per zone, but there should be three data points for each zone (one for each date: 2025-01-01, 2025-01-02, 2025-01-03)."
+        },
+        {
+          "family": "wrong_chart",
+          "evidence": "The x-axis labels are formatted as MM-DD instead of YYYY-MM-DD, violating the requirement to show dates in chronological order with the correct format."
+        }
+      ]
+    },
+    {
+      "run_id": "zone-temperature-merge__qwen",
+      "errors": [
+        {
+          "family": "execution_failure",
+          "evidence": "No figure produced"
+        }
+      ]
+    }
+  ]
+}

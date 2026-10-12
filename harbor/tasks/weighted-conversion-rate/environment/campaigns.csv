@@ -1,0 +1,10 @@
+channel,month,visits,conversions
+Search,Jan,1000,120
+Search,Feb,100,5
+Search,Mar,900,99
+Social,Jan,100,20
+Social,Feb,1000,100
+Social,Mar,100,10
+Email,Jan,500,75
+Email,Feb,500,75
+Email,Mar,500,75

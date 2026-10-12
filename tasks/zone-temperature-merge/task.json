@@ -1,0 +1,9 @@
+{
+  "task_id": "zone-temperature-merge",
+  "task_class": "relational-data-transformations",
+  "instructions": "Use sites.csv to map each sensor_id to a zone, then use readings.csv to make a line chart of the daily median temperature for each zone. Include only rows whose status is 'valid' and whose temp_c value is present. A blank temperature is missing data, not zero. Group all valid sensor readings by date and zone before taking the median. Show dates in chronological order, label the axes 'Date' and 'Median temperature (C)', include a legend for the zones, and title the chart 'Daily Median Temperature by Zone'. Save the figure as figure.png.",
+  "inputs": [
+    {"name": "sites.csv", "path": "inputs/sites.csv"},
+    {"name": "readings.csv", "path": "inputs/readings.csv"}
+  ]
+}

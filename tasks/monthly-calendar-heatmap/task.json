@@ -1,0 +1,8 @@
+{
+  "task_id": "monthly-calendar-heatmap",
+  "task_class": "complex-layout",
+  "instructions": "Read incidents.csv and make a calendar heatmap for February 2025. Use a Monday-first 7-column grid labeled Mon through Sun. Position each observed date in its correct weekday column and calendar week row. Encode incident_count with both cell color and an integer annotation; observed zero counts must display 0. The date 2025-02-12 has no row and is missing: leave its cell blank with no annotation, rather than treating it as zero. Leave dates outside February blank. Include a colorbar labeled 'Incidents', title the chart 'Daily Incidents, February 2025', and keep all weekday labels and cell annotations readable. Save the figure as figure.png.",
+  "inputs": [
+    {"name": "incidents.csv", "path": "inputs/incidents.csv"}
+  ]
+}

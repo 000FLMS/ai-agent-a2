@@ -1,0 +1,9 @@
+date,product,amount
+2025-02-03,Widget A,4
+2025-02-01,Widget B,5
+2025-02-02,Widget A,5
+2025-02-01,Widget A,10
+2025-02-03,Widget B,8
+2025-02-02,Widget B,-1
+2025-02-01,Widget A,-2
+2025-02-03,Widget B,3

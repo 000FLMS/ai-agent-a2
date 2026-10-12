@@ -1,0 +1,13 @@
+date,sensor_id,temp_c,status
+2025-01-03,N2,9,valid
+2025-01-01,S1,9,valid
+2025-01-02,N1,5,valid
+2025-01-01,N2,6,valid
+2025-01-03,S2,13,valid
+2025-01-02,S1,8,valid
+2025-01-01,N1,4,valid
+2025-01-03,S1,7,valid
+2025-01-02,N2,,valid
+2025-01-01,S2,11,valid
+2025-01-02,S2,20,bad
+2025-01-03,N1,7,valid
